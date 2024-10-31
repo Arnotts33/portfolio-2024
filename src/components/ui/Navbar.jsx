@@ -1,13 +1,13 @@
+import styles from "./Navbar.module.css";
+
 function Navbar() {
 	return (
-		<header className="header" data-aos="fade-down">
-			<nav className="header__nav">
-				<div className="header__logo">
-					<h1>
-						AL<span>.</span>
-					</h1>
-				</div>
-				<ul className="header__menu">
+		<header className={styles.header} data-aos="fade-down">
+			<h1>
+				AL<span>.</span>
+			</h1>
+			<nav className={styles.header__nav}>
+				<ul className={styles.header__menu}>
 					<li>
 						<a href="#">home</a>
 					</li>
@@ -21,7 +21,7 @@ function Navbar() {
 						<a href="#">projects</a>
 					</li>
 					<li>
-						<button className="header__menu-btn">
+						<button className={styles.header__menu_btn}>
 							contact me.
 						</button>
 					</li>
