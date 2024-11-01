@@ -43,15 +43,13 @@
 	-webkit-text-stroke-color: black;
 }
 
-img {
-	/* position: absolute; */
+.hero__image {
 	z-index: -1;
 	-webkit-mask-image: linear-gradient(#000, rgba(0, 0, 0, 0));
 	mask-image: linear-gradient(#000, rgba(0, 0, 0, 0));
 	width: auto;
 	max-width: 75%;
 	height: clamp(300px, 60svh, 680px);
-	/* aspect-ratio: 12/8; */
 	object-fit: cover;
 	object-position: center;
 }

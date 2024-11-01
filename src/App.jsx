@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Hero from "./components/homepage/Hero";
 import Navbar from "./components/ui/Navbar";
+import Role from "./components/homepage/Role";
 
 function App() {
 	useEffect(() => {
@@ -17,6 +18,9 @@ function App() {
 		<>
 			<Navbar />
 			<Hero />
+			<main>
+				<Role />
+			</main>
 		</>
 	);
 }

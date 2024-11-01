@@ -1,0 +1,60 @@
+.role {
+	background-color: black;
+	height: 100vh;
+}
+
+.role__flex_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	height: 100%;
+	padding-inline: 4rem;
+}
+
+.role__title {
+	margin-block: 2rem;
+}
+
+.role__title h1 {
+	font-size: 3rem;
+}
+
+.role__text {
+	width: 60%;
+	color: #c7c7b0;
+	font-weight: 400;
+	font-family: var(--ff-cabinet-sans);
+}
+
+.role__text p {
+	color: #ffffff;
+	font-size: 1.5rem;
+	line-height: 1.4;
+}
+
+.role__text span {
+	font-size: 2rem;
+	color: #c7c7b0;
+	font-weight: 500;
+}
+
+.role__image_container {
+	width: 40%;
+}
+
+.role__image {
+	width: 100%;
+	border-radius: 0.5rem;
+}
+
+.role__btn {
+	margin-top: 8rem;
+	border: none;
+	border-radius: 2rem;
+	color: #f1f0ee;
+	background-color: #80806a;
+	padding: 15px 30px;
+	cursor: pointer;
+	font-size: 1.125rem;
+}

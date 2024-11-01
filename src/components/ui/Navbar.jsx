@@ -9,7 +9,7 @@ function Navbar() {
 			<nav className={styles.header__nav}>
 				<ul className={styles.header__menu}>
 					<li>
-						<a href="#">about</a>
+						<a href="#about">about</a>
 					</li>
 					<li>
 						<a href="#">skills</a>
