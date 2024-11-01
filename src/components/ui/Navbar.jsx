@@ -17,12 +17,10 @@ function Navbar() {
 					<li>
 						<a href="#">projects</a>
 					</li>
-					<li>
-						<button className={styles.header__menu_btn}>
-							contact me.
-						</button>
-					</li>
 				</ul>
+				<button className={styles.header__menu_btn}>contact me.</button>
+
+				{/* Toggle Menu Small Devices */}
 			</nav>
 		</header>
 	);
