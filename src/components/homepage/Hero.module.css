@@ -20,20 +20,20 @@
 
 .hero__title h1 {
 	font-family: "General Sans", sans-serif;
-	font-size: clamp(2rem, 8vw, 12rem);
+	font-size: clamp(2rem, 10vw, 8rem);
 	text-transform: uppercase;
 	font-weight: 900;
 	line-height: 1;
 	letter-spacing: -0.04em;
 }
 
-@media (height < 1600px) {
+@media (height < 900px) {
 	.hero__title h1 {
-		font-size: clamp(2rem, 11vh, 10rem);
+		font-size: 6rem;
 	}
 
 	.hero__title {
-		top: 22%;
+		top: 18%;
 	}
 }
 
