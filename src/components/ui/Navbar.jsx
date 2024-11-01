@@ -9,9 +9,6 @@ function Navbar() {
 			<nav className={styles.header__nav}>
 				<ul className={styles.header__menu}>
 					<li>
-						<a href="#">home</a>
-					</li>
-					<li>
 						<a href="#">about</a>
 					</li>
 					<li>

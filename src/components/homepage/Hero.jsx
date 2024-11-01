@@ -1,4 +1,10 @@
 import styles from "./Hero.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+	faSquareInstagram,
+	faLinkedin,
+	faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Hero() {
 	return (
@@ -17,9 +23,34 @@ function Hero() {
 				className={styles.hero__image}
 				src="../src/assets/images/beach-bg.jpg"
 				alt="beach background"
-				width="600px"
 				data-aos="zoom-out"
 			/>
+			<div className={styles.hero__socials}>
+				<a
+					href="https://github.com/Arnotts33"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<FontAwesomeIcon icon={faGithub} size="xl" />
+				</a>
+				<a
+					href="https://www.linkedin.com/in/arnaudlht/"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<FontAwesomeIcon icon={faLinkedin} size="xl" />
+				</a>
+				<a
+					href="https://www.instagram.com/arnaudlahaut/"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<FontAwesomeIcon icon={faSquareInstagram} size="xl" />
+				</a>
+			</div>
+			<div className={styles.hero__scroll_indicator}>
+				<div className={styles.mouse}></div>
+			</div>
 		</section>
 	);
 }
