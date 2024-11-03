@@ -1,0 +1,32 @@
+.contact__form {
+	width: 60%;
+}
+
+.form__input_box_container {
+	display: flex;
+	gap: 2rem;
+	margin-bottom: 5rem;
+}
+
+.form__input_box_container input {
+	width: 50%;
+	padding-block: 0.5rem;
+	border: none;
+	border-bottom: 1px solid var(--heading-primary);
+	background-color: transparent;
+	font-family: var(--ff-cabinet-sans);
+	color: var(--heading-primary);
+	font-size: 1.25rem;
+}
+
+.textarea_container textarea {
+	width: 100%;
+	padding-block: 0.5rem;
+	border: none;
+	border-bottom: 1px solid var(--heading-primary);
+	background-color: transparent;
+	font-family: var(--ff-cabinet-sans);
+	color: var(--heading-primary);
+	font-size: 1.25rem;
+	margin-bottom: 4rem;
+}
