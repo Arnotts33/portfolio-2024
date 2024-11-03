@@ -26,7 +26,7 @@ function Role() {
 						creative design and development.
 					</p>
 					<button
-						className={styles.role__container_btn}
+						className="btn btn--secondary"
 						onClick={handleToggleAbout}
 					>
 						My Story

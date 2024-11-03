@@ -18,4 +18,22 @@ a {
 body {
 	min-height: 100vh;
 	font-family: "Roboto", sans-serif;
+	background-color: var(--bg-light);
+}
+
+.btn {
+	border: none;
+	border-radius: 2rem;
+	cursor: pointer;
+	font-size: 1.2rem;
+	color: var(--text-primary);
+	padding: 20px 30px;
+}
+
+.button--primary {
+	background-color: var(--bg-dark);
+}
+
+.btn--secondary {
+	background-color: #80806a;
 }

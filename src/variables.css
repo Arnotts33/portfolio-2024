@@ -15,9 +15,15 @@
 }
 
 :root {
+	/* Fonts */
 	--ff-general-sans: "GeneralSans-Variable", sans-serif;
 	--ff-cabinet-sans: "CabinetGrotesk-Variable", sans-serif;
 
-	--primary-color: #09583e;
-	--secondary-color: hsl(26, 43%, 32%);
+	/* Colors */
+	--bg-light: hsl(60, 14%, 97%);
+	--bg-dark: hsl(60, 8%, 5%);
+
+	--text-primary: hsl(60, 9%, 98%);
+	--heading-primary: hsl(60, 9%, 46%);
+	--heading-secondary: hsl(60, 17%, 74%);
 }

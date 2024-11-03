@@ -1,5 +1,5 @@
 .about {
-	background-color: black;
+	background-color: var(--bg-dark);
 	height: 100vh;
 	align-content: center;
 	width: 100%;
@@ -41,13 +41,13 @@
 
 .about__text_container h2 {
 	font-family: var(--ff-general-sans);
-	color: #c7c7b0;
+	color: var(--heading-secondary);
 	font-size: clamp(1.5rem, 2.5vw, 2.5rem);
 	margin-bottom: 4rem;
 }
 
 .about__text_container p {
-	color: #ffffff;
+	color: var(--text-primary);
 	font-size: clamp(1rem, 1.5vw, 1.5rem);
 	line-height: 1.8;
 	margin-bottom: 2rem;
@@ -55,7 +55,7 @@
 
 .about__text_container span {
 	font-size: 2rem;
-	color: #c7c7b0;
+	color: var(--heading-secondary);
 	font-weight: 500;
 }
 
@@ -75,7 +75,7 @@
 	margin-top: 6rem;
 	border: none;
 	border-radius: 2rem;
-	color: #f1f0ee;
+	color: var(--text-primary);
 	background-color: #80806a;
 	width: 180px;
 	padding: 20px 40px;

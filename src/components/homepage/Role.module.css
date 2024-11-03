@@ -1,5 +1,5 @@
 .role {
-	background-color: black;
+	background-color: var(--bg-dark);
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -20,18 +20,18 @@
 
 .role__container p {
 	font-size: 2.25rem;
-	color: white;
+	color: var(--text-primary);
 }
 
 .role__container span {
 	font-size: 3rem;
-	color: #c7c7b0;
+	color: var(--heading-secondary);
 	font-weight: 700;
 }
 
 .role__container_title {
 	font-size: 5rem;
-	color: #c7c7b0;
+	color: var(--heading-secondary);
 	font-family: var(--ff-general-sans);
 	line-height: 1.1;
 }
@@ -40,14 +40,7 @@
 	font-size: 1.75rem;
 }
 
-.role__container_btn {
+.role__container > button {
 	margin-top: 6rem;
-	border: none;
-	border-radius: 2rem;
-	color: #f1f0ee;
-	background-color: #80806a;
 	width: 180px;
-	padding: 20px 40px;
-	cursor: pointer;
-	font-size: 1.125rem;
 }
