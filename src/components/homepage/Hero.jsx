@@ -5,6 +5,7 @@ import {
 	faLinkedin,
 	faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import beach from "../../assets/images/beach-bg.jpg";
 
 function Hero() {
 	return (
@@ -21,7 +22,7 @@ function Hero() {
 			</div>
 			<img
 				className={styles.hero__image}
-				src="../src/assets/images/beach-bg.jpg"
+				src={beach}
 				alt="beach background"
 				data-aos="zoom-out"
 			/>
