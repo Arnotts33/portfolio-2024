@@ -54,6 +54,12 @@
 	object-position: center;
 }
 
+@media (width < 900px) {
+	.hero__image {
+		height: 60vw;
+	}
+}
+
 .hero__socials {
 	display: flex;
 	flex-direction: column;
@@ -97,5 +103,12 @@
 	to {
 		opacity: 0;
 		top: 40px;
+	}
+}
+
+@media (width < 900px) {
+	.hero__scroll_indicator,
+	.hero__socials {
+		display: none;
 	}
 }

@@ -20,6 +20,7 @@ function App() {
 			<Hero />
 			<main>
 				<Role />
+				{/* <About /> */}
 			</main>
 		</>
 	);

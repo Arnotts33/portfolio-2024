@@ -1,35 +1,41 @@
+import { useState } from "react";
 import styles from "./Role.module.css";
+import About from "./About";
 
 function Role() {
-	return (
-		<section className={styles.role} id="about">
-			<div className={styles.role__flex_container}>
-				<div className={styles.role__text}>
+	const [isToggleAbout, setIsToggleAbout] = useState(false);
+
+	function handleToggleAbout() {
+		setIsToggleAbout((prevToggleAbout) => !prevToggleAbout);
+	}
+
+	if (!isToggleAbout)
+		return (
+			<section className={styles.role}>
+				<div className={styles.role__container}>
 					<p>
 						Once a <span>chef</span>, I am now a
 					</p>
-					<div className={styles.role__title}>
+					<div className={styles.role__container_title}>
 						<h1>Frontend Developer</h1>
-						<p>based in Bordeaux, France.</p>
+						<p>based in Bordeaux, France</p>
 					</div>
 					<p>
 						I love creating and crafting impactful digital
 						experiences that engage and resonate with people through
 						creative design and development.
 					</p>
-					<button className={styles.role__btn}>My Story</button>
+					<button
+						className={styles.role__container_btn}
+						onClick={handleToggleAbout}
+					>
+						My Story
+					</button>
 				</div>
-				<div className={styles.role__image_container}>
-					<img
-						className={styles.role__image}
-						src="../src/assets/images/arnaud-cook.webp"
-						loading="lazy"
-						alt="arnaud presenting a dish"
-					/>
-				</div>
-			</div>
-		</section>
-	);
+			</section>
+		);
+
+	if (isToggleAbout) return <About />;
 }
 
 export default Role;
