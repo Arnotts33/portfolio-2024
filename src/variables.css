@@ -24,6 +24,7 @@
 	--bg-dark: hsl(60, 8%, 5%);
 
 	--text-primary: hsl(60, 9%, 98%);
+	--text-secondary: hsl(0, 3%, 13%);
 	--heading-primary: hsl(60, 9%, 46%);
 	--heading-secondary: hsl(60, 17%, 74%);
 }

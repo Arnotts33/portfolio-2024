@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Hero from "./components/homepage/Hero";
 import Navbar from "./components/ui/Navbar";
 import Role from "./components/homepage/Role";
+import Skills from "./components/homepage/Skills";
 
 function App() {
 	useEffect(() => {
@@ -20,7 +21,7 @@ function App() {
 			<Hero />
 			<main>
 				<Role />
-				{/* <About /> */}
+				<Skills />
 			</main>
 		</>
 	);
