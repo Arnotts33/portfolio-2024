@@ -1,4 +1,13 @@
 import styles from "./Skills.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+	faReact,
+	faJs,
+	faCss3Alt,
+	faHtml5,
+	faFigma,
+	faGitAlt,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Skills() {
 	return (
@@ -18,12 +27,54 @@ function Skills() {
 					</div>
 					<div className={styles.skills__box_list}>
 						<ul>
-							<li>React</li>
-							<li>JavaScript</li>
-							<li>CSS</li>
-							<li>HTML</li>
-							<li>Figma</li>
-							<li>Git</li>
+							<li>
+								<FontAwesomeIcon
+									icon={faReact}
+									// size="l"
+									style={{ color: "#80806b", fontSize: "64" }}
+								/>
+								React
+							</li>
+							<li>
+								<FontAwesomeIcon
+									icon={faJs}
+									size="lg"
+									style={{ color: "#80806b" }}
+								/>
+								JavaScript
+							</li>
+							<li>
+								<FontAwesomeIcon
+									icon={faCss3Alt}
+									size="lg"
+									style={{ color: "#80806b" }}
+								/>
+								CSS
+							</li>
+							<li>
+								<FontAwesomeIcon
+									icon={faHtml5}
+									size="lg"
+									style={{ color: "#80806b" }}
+								/>
+								HTML
+							</li>
+							<li>
+								<FontAwesomeIcon
+									icon={faFigma}
+									size="lg"
+									style={{ color: "#80806b" }}
+								/>
+								Figma
+							</li>
+							<li>
+								<FontAwesomeIcon
+									icon={faGitAlt}
+									size="lg"
+									style={{ color: "#80806b" }}
+								/>
+								Git
+							</li>
 						</ul>
 					</div>
 				</div>
