@@ -36,6 +36,7 @@
 input:focus,
 textarea:focus {
 	outline: none;
+	border-bottom: 2px solid hsla(60, 8%, 24%, 0.664);
 }
 
 input::placeholder,

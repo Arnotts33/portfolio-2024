@@ -20,10 +20,11 @@ function Contact() {
 	}, []);
 
 	return (
-		<section className={styles.contact__section}>
+		<section className={styles.contact__section} id="contact">
 			<h1>Get In Touch</h1>
 			<div className={styles.contact__container}>
 				<div className={styles.contact__form_container}>
+					<h2>Interested in working together?</h2>
 					<p>
 						I am open to work and looking for freelance
 						opportunities or a position in startups, agencies and

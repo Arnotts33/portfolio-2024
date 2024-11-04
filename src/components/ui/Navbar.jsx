@@ -18,7 +18,11 @@ function Navbar() {
 						<a href="#">projects</a>
 					</li>
 				</ul>
-				<button className="btn button--primary">contact me.</button>
+				<button className="btn button--primary">
+					<a className={styles.contact_btn} href="#contact">
+						contact me.
+					</a>
+				</button>
 
 				{/* Toggle Menu Small Devices */}
 			</nav>

@@ -43,6 +43,10 @@
 	font-size: 1.2rem;
 }
 
+.contact_btn {
+	color: var(--text-primary);
+}
+
 @media (width < 900px) {
 	.header__menu {
 		display: none;
