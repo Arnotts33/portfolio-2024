@@ -10,30 +10,26 @@ import beach from "../../assets/images/beach-bg.jpg";
 function Hero() {
 	return (
 		<section className={styles.hero}>
-			<div className={styles.hero__title}>
-				{/* <h1 data-aos="fade-up">Arnaud Lahaut</h1> */}
+			<div
+				className={styles.hero__title}
+				data-scroll
+				data-scroll-speed="0.7"
+			>
 				<h1>Arnaud Lahaut</h1>
-				{/* <h1 className={styles.outlined} data-aos="fade-up">
-					Creative
-				</h1> */}
+
 				<h1 className={styles.outlined}>Creative</h1>
-				{/* <h1 data-aos="fade-up">Frontend</h1> */}
+
 				<h1>Frontend</h1>
-				{/* <h1 className={styles.outlined} data-aos="fade-up">
-					Developer
-				</h1> */}
+
 				<h1 className={styles.outlined}>Developer</h1>
 			</div>
-			{/* <img
-				className={styles.hero__image}
-				src={beach}
-				alt="beach background"
-				data-aos="zoom-out"
-			/> */}
+
 			<img
 				className={styles.hero__image}
 				src={beach}
 				alt="beach background"
+				data-scroll
+				data-scroll-speed="0.3"
 			/>
 			<div className={styles.hero__socials}>
 				<a

@@ -14,6 +14,10 @@ import { useEffect } from "react";
 function App() {
 	useEffect(() => {
 		const locomotiveScroll = new LocomotiveScroll();
+
+		return () => {
+			locomotiveScroll.destroy();
+		};
 	}, []);
 
 	return (
