@@ -1,5 +1,5 @@
 .contact__form {
-	width: 60%;
+	width: 100%;
 }
 
 .form__input_box_container {
@@ -11,22 +11,34 @@
 .form__input_box_container input {
 	width: 50%;
 	padding-block: 0.5rem;
+	padding-left: 0.5rem;
 	border: none;
 	border-bottom: 1px solid var(--heading-primary);
 	background-color: transparent;
 	font-family: var(--ff-cabinet-sans);
-	color: var(--heading-primary);
+	color: var(--text-secondary);
 	font-size: 1.25rem;
 }
 
 .textarea_container textarea {
 	width: 100%;
 	padding-block: 0.5rem;
+	padding-left: 0.5rem;
 	border: none;
 	border-bottom: 1px solid var(--heading-primary);
 	background-color: transparent;
 	font-family: var(--ff-cabinet-sans);
-	color: var(--heading-primary);
+	color: var(--text-secondary);
 	font-size: 1.25rem;
 	margin-bottom: 4rem;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: var(--heading-primary);
 }
