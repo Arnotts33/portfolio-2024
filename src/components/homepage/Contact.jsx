@@ -48,7 +48,7 @@ function Contact() {
 							>
 								<FontAwesomeIcon
 									icon={faGithub}
-									size="l"
+									size="lg"
 									style={{ color: "#80806b" }}
 								/>{" "}
 								Github
@@ -60,7 +60,7 @@ function Contact() {
 							>
 								<FontAwesomeIcon
 									icon={faLinkedin}
-									size="l"
+									size="lg"
 									style={{ color: "#80806b" }}
 								/>{" "}
 								LinkedIn
@@ -72,7 +72,7 @@ function Contact() {
 							>
 								<FontAwesomeIcon
 									icon={faSquareInstagram}
-									size="l"
+									size="lg"
 									style={{ color: "#80806b" }}
 								/>{" "}
 								Instagram

@@ -30,7 +30,6 @@ function Skills() {
 							<li>
 								<FontAwesomeIcon
 									icon={faReact}
-									// size="l"
 									style={{ color: "#80806b", fontSize: "64" }}
 								/>
 								React

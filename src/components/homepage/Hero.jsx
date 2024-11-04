@@ -5,26 +5,68 @@ import {
 	faLinkedin,
 	faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import beach from "../../assets/images/beach-bg.jpg";
+import { useRef } from "react";
 
 function Hero() {
+	const heroContainer = useRef(null);
+	const heroImg = useRef(null);
+	const titles = useRef([]);
+
+	useGSAP(
+		() => {
+			const tl = gsap.timeline();
+
+			tl.from(heroImg.current, {
+				scale: 2,
+				duration: 3.2,
+				ease: "power4.inOut",
+			}).from(
+				titles.current,
+				{
+					y: 200,
+					opacity: 0,
+					duration: 2,
+					ease: "power3.inOut",
+				},
+				"-=2.3"
+			);
+		},
+		{ scope: heroContainer }
+	);
+
 	return (
-		<section className={styles.hero}>
+		<section ref={heroContainer} className={styles.hero}>
 			<div
 				className={styles.hero__title}
 				data-scroll
 				data-scroll-speed="0.7"
 			>
-				<h1>Arnaud Lahaut</h1>
+				<h1 ref={(el) => (titles.current[0] = el)}>Arnaud Lahaut</h1>
 
-				<h1 className={styles.outlined}>Creative</h1>
+				<h1
+					ref={(el) => (titles.current[1] = el)}
+					className={`hidden ${styles.outlined} title`}
+				>
+					Creative
+				</h1>
 
-				<h1>Frontend</h1>
+				<h1 ref={(el) => (titles.current[2] = el)} className="title">
+					Frontend
+				</h1>
 
-				<h1 className={styles.outlined}>Developer</h1>
+				<h1
+					ref={(el) => (titles.current[3] = el)}
+					className={`${styles.outlined} title`}
+				>
+					Developer
+				</h1>
 			</div>
 
 			<img
+				ref={heroImg}
 				className={styles.hero__image}
 				src={beach}
 				alt="beach background"
