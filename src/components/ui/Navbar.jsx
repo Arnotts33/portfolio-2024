@@ -2,7 +2,8 @@ import styles from "./Navbar.module.css";
 
 function Navbar() {
 	return (
-		<header className={styles.header} data-aos="fade-down">
+		// <header className={styles.header} data-aos="fade-down">
+		<header className={styles.header}>
 			<h1>
 				AL<span>.</span>
 			</h1>
