@@ -58,3 +58,14 @@
 	align-items: center;
 	gap: 3rem;
 }
+
+.icon__container {
+	width: 5vw;
+	display: flex;
+	justify-content: center;
+}
+
+.icon {
+	font-size: 5rem;
+	color: var(--heading-primary);
+}

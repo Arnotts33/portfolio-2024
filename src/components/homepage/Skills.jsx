@@ -28,50 +28,62 @@ function Skills() {
 					<div className={styles.skills__box_list}>
 						<ul>
 							<li>
-								<FontAwesomeIcon
-									icon={faReact}
-									style={{ color: "#80806b", fontSize: "64" }}
-								/>
+								<div className={styles.icon__container}>
+									<FontAwesomeIcon
+										icon={faReact}
+										className={styles.icon}
+									/>
+								</div>
 								React
 							</li>
 							<li>
-								<FontAwesomeIcon
-									icon={faJs}
-									size="lg"
-									style={{ color: "#80806b" }}
-								/>
+								<div className={styles.icon__container}>
+									<FontAwesomeIcon
+										icon={faJs}
+										size="lg"
+										style={{ color: "#80806b" }}
+									/>
+								</div>
 								JavaScript
 							</li>
 							<li>
-								<FontAwesomeIcon
-									icon={faCss3Alt}
-									size="lg"
-									style={{ color: "#80806b" }}
-								/>
+								<div className={styles.icon__container}>
+									<FontAwesomeIcon
+										icon={faCss3Alt}
+										size="lg"
+										style={{ color: "#80806b" }}
+									/>
+								</div>
 								CSS
 							</li>
 							<li>
-								<FontAwesomeIcon
-									icon={faHtml5}
-									size="lg"
-									style={{ color: "#80806b" }}
-								/>
+								<div className={styles.icon__container}>
+									<FontAwesomeIcon
+										icon={faHtml5}
+										size="lg"
+										style={{ color: "#80806b" }}
+									/>
+								</div>
 								HTML
 							</li>
 							<li>
-								<FontAwesomeIcon
-									icon={faFigma}
-									size="lg"
-									style={{ color: "#80806b" }}
-								/>
+								<div className={styles.icon__container}>
+									<FontAwesomeIcon
+										icon={faFigma}
+										size="lg"
+										style={{ color: "#80806b" }}
+									/>
+								</div>
 								Figma
 							</li>
 							<li>
-								<FontAwesomeIcon
-									icon={faGitAlt}
-									size="lg"
-									style={{ color: "#80806b" }}
-								/>
+								<div className={styles.icon__container}>
+									<FontAwesomeIcon
+										icon={faGitAlt}
+										size="lg"
+										style={{ color: "#80806b" }}
+									/>
+								</div>
 								Git
 							</li>
 						</ul>

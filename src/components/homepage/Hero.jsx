@@ -15,27 +15,24 @@ function Hero() {
 	const heroImg = useRef(null);
 	const titles = useRef([]);
 
-	useGSAP(
-		() => {
-			const tl = gsap.timeline();
+	useGSAP(() => {
+		const tl = gsap.timeline();
 
-			tl.from(heroImg.current, {
-				scale: 2,
-				duration: 3.2,
-				ease: "power4.inOut",
-			}).from(
-				titles.current,
-				{
-					y: 200,
-					opacity: 0,
-					duration: 2,
-					ease: "power3.inOut",
-				},
-				"-=2.3"
-			);
-		},
-		{ scope: heroContainer }
-	);
+		tl.from(heroImg.current, {
+			scale: 2,
+			duration: 3.2,
+			ease: "power4.inOut",
+		}).from(
+			titles.current,
+			{
+				y: 200,
+				opacity: 0,
+				duration: 2,
+				ease: "power3.inOut",
+			},
+			"-=2.5"
+		);
+	});
 
 	return (
 		<section ref={heroContainer} className={styles.hero}>
