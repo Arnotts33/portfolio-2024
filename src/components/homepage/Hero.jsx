@@ -35,41 +35,47 @@ function Hero() {
 	});
 
 	return (
-		<section ref={heroContainer} className={styles.hero}>
-			<div
-				className={styles.hero__title}
-				data-scroll
-				data-scroll-speed="0.7"
-			>
-				<h1 ref={(el) => (titles.current[0] = el)}>Arnaud Lahaut</h1>
-
-				<h1
-					ref={(el) => (titles.current[1] = el)}
-					className={`hidden ${styles.outlined} title`}
+		<section ref={heroContainer} className={styles.hero__container}>
+			<div className={styles.hero}>
+				<div
+					className={styles.hero__title}
+					data-scroll
+					data-scroll-speed="0.3"
 				>
-					Creative
-				</h1>
+					<h1 ref={(el) => (titles.current[0] = el)}>
+						Arnaud Lahaut
+					</h1>
 
-				<h1 ref={(el) => (titles.current[2] = el)} className="title">
-					Frontend
-				</h1>
+					<h1
+						ref={(el) => (titles.current[1] = el)}
+						className={`hidden ${styles.outlined} title`}
+					>
+						Creative
+					</h1>
 
-				<h1
-					ref={(el) => (titles.current[3] = el)}
-					className={`${styles.outlined} title`}
+					<h1
+						ref={(el) => (titles.current[2] = el)}
+						className="title"
+					>
+						Frontend
+					</h1>
+
+					<h1
+						ref={(el) => (titles.current[3] = el)}
+						className={`${styles.outlined} title`}
+					>
+						Developer
+					</h1>
+				</div>
+				<div
+					className={styles.hero__image}
+					ref={heroImg}
+					data-scroll
+					data-scroll-speed="0.3"
 				>
-					Developer
-				</h1>
+					<img src={beach} alt="beach background" />
+				</div>
 			</div>
-
-			<img
-				ref={heroImg}
-				className={styles.hero__image}
-				src={beach}
-				alt="beach background"
-				data-scroll
-				data-scroll-speed="0.3"
-			/>
 
 			<div className={styles.hero__socials}>
 				<a
