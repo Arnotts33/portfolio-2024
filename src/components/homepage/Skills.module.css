@@ -17,13 +17,13 @@
 	color: var(--heading-primary);
 	font-weight: 800;
 	text-transform: uppercase;
+	/* margin-block: 5rem 3rem; */
 }
 
 .skills__box {
 	display: flex;
 	justify-content: space-between;
 	gap: 10rem;
-	margin-top: 5rem;
 }
 
 .skills__box_text {

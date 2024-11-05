@@ -1,0 +1,40 @@
+.project__container {
+	width: 65%;
+	max-width: 87.5rem;
+	margin-bottom: 3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.project__container img {
+	width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+}
+
+.project__container h2 {
+	font-size: 3rem;
+	color: var(--heading-light);
+	font-weight: 700;
+	font-family: var(--ff-general-sans);
+	margin-bottom: 1rem;
+}
+
+.project__container span {
+	font-size: 1.125rem;
+	color: var(--heading-secondary);
+	font-family: var(--ff-cabinet-sans);
+	border: 1px solid var(--heading-secondary);
+	border-radius: 25px;
+	padding: 10px 40px;
+	margin-right: 1rem;
+	width: fit-content;
+}
+
+.project__container p {
+	font-size: 1.25rem;
+	color: var(--text-primary);
+	font-family: var(--ff-cabinet-sans);
+	margin-top: 1.5rem;
+	line-height: 1.5;
+}
