@@ -27,8 +27,8 @@ function App() {
 			<main>
 				<Role />
 				<Skills />
-				<Projects />
-				<Contact />
+				{/* <Projects />
+				<Contact /> */}
 			</main>
 		</>
 	);
