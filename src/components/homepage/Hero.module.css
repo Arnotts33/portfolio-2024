@@ -46,12 +46,6 @@
 	object-position: center;
 }
 
-/* @media (width < 900px) {
-	.hero__image {
-		height: 60vw;
-	}
-} */
-
 .hero__socials {
 	display: flex;
 	flex-direction: column;

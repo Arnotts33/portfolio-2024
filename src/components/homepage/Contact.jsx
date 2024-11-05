@@ -84,6 +84,10 @@ function Contact() {
 						<p>Bordeaux, France</p>
 						<p>{time}</p>
 					</div>
+					<div className={styles.availability}>
+						<span className={styles.dot}></span>
+						<p>Available for work</p>
+					</div>
 				</div>
 			</div>
 		</section>

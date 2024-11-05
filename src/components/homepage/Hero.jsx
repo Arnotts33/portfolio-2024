@@ -70,6 +70,7 @@ function Hero() {
 				data-scroll
 				data-scroll-speed="0.3"
 			/>
+
 			<div className={styles.hero__socials}>
 				<a
 					href="https://github.com/Arnotts33"

@@ -85,3 +85,39 @@
 	align-items: center;
 	gap: 1rem;
 }
+
+.availability {
+	bottom: 2rem;
+	position: relative;
+	margin-left: 2rem;
+}
+
+.availability p {
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--text-secondary);
+	font-family: var(--ff-general-sans);
+	text-transform: uppercase;
+}
+
+.dot {
+	content: "";
+	position: absolute;
+	left: -2rem;
+	top: 40%;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: hsl(115, 100%, 76%);
+	box-shadow: 0 0 1.5rem 0.2rem hsla(115, 100%, 76%, 0.555);
+	animation: fadeIn 1.5s infinite alternate;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

@@ -28,5 +28,5 @@
 	color: var(--heading-primary);
 	font-weight: 800;
 	text-transform: uppercase;
-	/* margin-block: 5rem; */
+	margin-bottom: 5rem;
 }
