@@ -27,7 +27,7 @@
 }
 
 .hero__title h1 {
-	font-family: "General Sans", sans-serif;
+	font-family: var(--ff-general-sans);
 	font-size: clamp(2.25rem, 9.5vw, 7.5rem);
 	text-transform: uppercase;
 	font-weight: 900;
@@ -42,9 +42,8 @@
 }
 
 .outlined {
-	color: transparent;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: black;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 3px var(--text-secondary);
 }
 
 .hero__image {

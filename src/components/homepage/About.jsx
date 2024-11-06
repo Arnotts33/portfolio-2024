@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import arnaud from "../../../public/assets//images/arnaud-cook.webp";
+import arnaud from "/assets/images/arnaud-cook.webp";
 
 function About() {
 	return (
