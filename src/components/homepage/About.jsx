@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import arnaud from "../../../public/assets//images/arnaud-cook.webp";
 
 function About() {
 	return (
@@ -7,7 +8,7 @@ function About() {
 				<div className={styles.about__image_container}>
 					<img
 						className={styles.about__image}
-						src="../src/assets/images/arnaud-cook.webp"
+						src={arnaud}
 						loading="lazy"
 						alt="arnaud presenting a dish"
 					/>
