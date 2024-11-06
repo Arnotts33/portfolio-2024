@@ -74,6 +74,9 @@
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 2rem;
 	}
+	.skills__box_list li {
+		margin-bottom: 3rem;
+	}
 }
 
 .icon__container {
