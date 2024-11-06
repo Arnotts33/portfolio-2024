@@ -23,12 +23,12 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<Hero />
 			<main>
+				<Hero />
 				<Role />
 				<Skills />
-				{/* <Projects />
-				<Contact /> */}
+				<Projects />
+				{/* <Contact /> */}
 			</main>
 		</>
 	);
