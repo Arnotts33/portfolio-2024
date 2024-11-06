@@ -107,24 +107,38 @@
 	height: 10px;
 	background-color: hsl(60, 9%, 46%);
 	border-radius: 50%;
-	-webkit-animation: webkit-run 1.8s ease-in-out infinite;
+	/* -webkit-animation: webkit-run 1.8s ease-in-out infinite;
 	-moz-animation: moz-run 1.8s ease-in-out infinite;
-	-o-animation: o-run 1.8s ease-in-out infinite;
+	-o-animation: o-run 1.8s ease-in-out infinite; */
+	-webkit-animation: run 1.8s ease-in-out infinite;
 	animation: run 1.8s ease-in-out infinite;
+}
+
+@-webkit-keyframes run {
+	from {
+		opacity: 1;
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translateY(40px);
+		transform: translateY(40px);
+	}
 }
 
 @keyframes run {
 	from {
 		opacity: 1;
-		top: 10px;
+		transform: translateY(10px);
 	}
 	to {
 		opacity: 0;
-		top: 40px;
+		transform: translateY(40px);
 	}
 }
 
-@-webkit-keyframes webkit-run {
+/* @-webkit-keyframes webkit-run {
 	from {
 		-webkit-opacity: 1;
 		-webkit-top: 10px;
@@ -155,7 +169,7 @@
 		-o-opacity: 0;
 		-o-top: 40px;
 	}
-}
+} */
 
 @media (width < 1024px) {
 	.hero__socials {
