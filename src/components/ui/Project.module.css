@@ -21,7 +21,7 @@
 }
 
 .project__container span {
-	font-size: clamp(0.75rem, 2.5vw, 1.25rem);
+	font-size: clamp(0.75rem, 1.75vw, 1.25rem);
 	color: var(--heading-secondary);
 	font-family: var(--ff-cabinet-sans);
 	border: 1px solid var(--heading-secondary);
@@ -32,7 +32,7 @@
 }
 
 .project__container p {
-	font-size: clamp(1rem, 4.5vw, 1.5rem);
+	font-size: clamp(1rem, 2vw, 1.5rem);
 	color: var(--text-primary);
 	font-family: var(--ff-cabinet-sans);
 	margin-top: 1.25rem;

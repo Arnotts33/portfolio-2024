@@ -11,20 +11,22 @@
 	width: 80%;
 	max-width: 87.5rem;
 	display: flex;
-	justify-content: space-between;
-	/* margin-top: 2rem; */
+	gap: 6rem;
+	align-items: center;
 }
 
 .contact__section h1 {
-	font-size: 6.75rem;
+	font-size: clamp(3.25rem, 10vw, 6.75rem);
 	color: var(--heading-primary);
 	font-weight: 800;
 	text-transform: uppercase;
+	margin-block: 3rem;
+	text-align: center;
 }
 
 .contact__form_container h2 {
 	font-family: var(--ff-general-sans);
-	font-size: 2rem;
+	font-size: clamp(1.5rem, 3vw, 2rem);
 	color: var(--text-secondary);
 	font-weight: 700;
 	margin-bottom: 2rem;
@@ -32,7 +34,7 @@
 
 .contact__form_container p {
 	width: 100%;
-	font-size: 1.5rem;
+	font-size: clamp(1rem, 2vw, 1.5rem);
 	color: var(--text-secondary);
 	font-weight: 400;
 	margin-bottom: 4rem;
@@ -51,14 +53,14 @@
 
 .personal_info__container h3 {
 	font-family: var(--ff-cabinet-sans);
-	font-size: 1.75rem;
+	font-size: clamp(1.25rem, 2.25vw, 1.75rem);
 	color: var(--text-secondary);
 	font-weight: 800;
 }
 
 .personal_info__container p,
 .personal_info__container li {
-	font-size: 1.25rem;
+	font-size: clamp(1rem, 1.75vw, 1.175rem);
 	color: var(--text-secondary);
 	font-weight: 400;
 	margin-top: 0.5rem;
@@ -78,7 +80,7 @@
 }
 
 .socials__links a {
-	font-size: 1.25rem;
+	font-size: clamp(1rem, 1.75vw, 1.175rem);
 	color: var(--text-secondary);
 	font-weight: 400;
 	display: flex;
@@ -87,26 +89,27 @@
 }
 
 .availability {
-	bottom: 2rem;
+	/* bottom: 2rem; */
 	position: relative;
-	margin-left: 2rem;
+	/* margin-left: 2rem; */
 }
 
 .availability p {
-	font-size: 1rem;
-	font-weight: 600;
+	font-size: clamp(0.85rem, 1.5vw, 1rem);
+	font-weight: 500;
 	color: var(--text-secondary);
 	font-family: var(--ff-general-sans);
-	text-transform: uppercase;
+	position: relative;
+	margin-left: 2rem;
 }
 
 .dot {
 	content: "";
 	position: absolute;
-	left: -2rem;
-	top: 40%;
-	width: 1rem;
-	height: 1rem;
+	left: 5%;
+	top: 50%;
+	width: 12px;
+	height: 12px;
 	border-radius: 50%;
 	background-color: hsl(115, 100%, 76%);
 	box-shadow: 0 0 1.5rem 0.2rem hsla(115, 100%, 76%, 0.555);
@@ -119,5 +122,42 @@
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+/* Media Queries */
+
+@media (width < 900px) {
+	.contact__container {
+		flex-direction: column;
+		gap: 4rem;
+	}
+	.contact__form_container {
+		width: 100%;
+	}
+
+	.personal_info__container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: baseline;
+		gap: 1rem;
+		width: 80vw;
+	}
+
+	.dot {
+		top: 10%;
+	}
+
+	.socials,
+	.availability {
+		justify-self: center;
+		margin-bottom: 1rem;
+	}
+}
+
+@media (width < 576px) {
+	.contact__form_container,
+	.personal_info__container {
+		width: 90vw;
 	}
 }

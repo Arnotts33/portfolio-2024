@@ -43,3 +43,17 @@ input::placeholder,
 textarea::placeholder {
 	color: var(--heading-primary);
 }
+
+/* Media Queries */
+
+@media (width < 576px) {
+	.form__input_box_container {
+		flex-direction: column;
+		gap: 4rem;
+		margin-bottom: 4rem;
+	}
+
+	.form__input_box_container input {
+		width: 100%;
+	}
+}
