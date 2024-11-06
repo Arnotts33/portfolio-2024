@@ -15,7 +15,7 @@ function Projects() {
 							img={projectImg}
 							name="FurreverFriends"
 							year="2024"
-							tech="Ruby On Rails • HTML • CSS • JavaScript"
+							tech="Ruby On Rails • CSS • JavaScript"
 							description="A social media platform for pet owners to connect with other pet owners. This is a long description to test the layout of the project component."
 						/>
 					</div>
@@ -24,7 +24,7 @@ function Projects() {
 							img={projectImg}
 							name="Massa"
 							year="2024"
-							tech="React • CSS modules • JavaScript"
+							tech="React • CSS • JavaScript"
 							description="A restaurant website for a fictional restaurant. This is a long description to test the layout of the project component."
 						/>
 					</div>
@@ -33,7 +33,7 @@ function Projects() {
 							img={projectImg}
 							name="Miles"
 							year="2024"
-							tech="React • CSS modules • JavaScript"
+							tech="React • CSS • JavaScript"
 							description="A restaurant website for a fictional restaurant. This is a long description to test the layout of the project component."
 						/>
 					</div>
