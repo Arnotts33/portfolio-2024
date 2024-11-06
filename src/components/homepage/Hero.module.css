@@ -27,7 +27,7 @@
 }
 
 .hero__title h1 {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--ff-general-sans);
 	font-size: clamp(2.25rem, 9.5vw, 7.5rem);
 	text-transform: uppercase;
 	font-weight: 900;
@@ -42,8 +42,9 @@
 }
 
 .outlined {
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 3px var(--text-secondary);
+	color: transparent;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
 }
 
 .hero__image {
@@ -127,6 +128,6 @@
 
 	.hero__scroll_indicator {
 		bottom: 2rem;
-		right: calc(100vw / 2 - 1.5rem);
+		right: calc(100vw / 2 - 1.7rem);
 	}
 }

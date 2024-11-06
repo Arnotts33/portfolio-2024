@@ -40,6 +40,12 @@ body {
 	padding: 20px 30px;
 }
 
+@media (width <768px) {
+	.btn {
+		padding: 15px 25px;
+	}
+}
+
 .button--primary {
 	background-color: var(--bg-dark);
 }
