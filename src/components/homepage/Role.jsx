@@ -11,7 +11,7 @@ function Role() {
 
 	if (!isToggleAbout)
 		return (
-			<section className={styles.role}>
+			<section className={styles.role__section}>
 				<div className={styles.role__container}>
 					<p>
 						Once a <span>chef</span>, I am now a
