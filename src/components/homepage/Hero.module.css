@@ -117,24 +117,24 @@
 @-webkit-keyframes run {
 	from {
 		opacity: 1;
-		-webkit-transform: translateY(10px);
-		transform: translateY(10px);
+		-webkit-transform: translateY(1px);
+		transform: translateY(1px);
 	}
 	to {
 		opacity: 0;
-		-webkit-transform: translateY(40px);
-		transform: translateY(40px);
+		-webkit-transform: translateY(35px);
+		transform: translateY(35px);
 	}
 }
 
 @keyframes run {
 	from {
 		opacity: 1;
-		transform: translateY(10px);
+		transform: translateY(1px);
 	}
 	to {
 		opacity: 0;
-		transform: translateY(40px);
+		transform: translateY(35px);
 	}
 }
 
