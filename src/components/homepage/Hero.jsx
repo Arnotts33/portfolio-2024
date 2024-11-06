@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import beach from "../../assets/images/beach-bg.jpg";
+import beach from "/assets/images/beach-bg.jpg";
 import { useRef } from "react";
 
 function Hero() {
