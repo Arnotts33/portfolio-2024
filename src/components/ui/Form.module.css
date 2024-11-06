@@ -46,7 +46,7 @@ textarea::placeholder {
 
 /* Media Queries */
 
-@media (width < 576px) {
+@media (max-width: 576px) {
 	.form__input_box_container {
 		flex-direction: column;
 		gap: 4rem;

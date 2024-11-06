@@ -143,7 +143,7 @@
 
 /* Media Queries */
 
-@media (width < 900px) {
+@media (max-width: 900px) {
 	.contact__container {
 		flex-direction: column;
 		gap: 4rem;
@@ -171,7 +171,7 @@
 	}
 }
 
-@media (width < 576px) {
+@media (max-width: 576px) {
 	.contact__form_container,
 	.personal_info__container {
 		width: 90vw;
