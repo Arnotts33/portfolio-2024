@@ -1,6 +1,5 @@
 import Project from "../ui/Project";
 import styles from "./Projects.module.css";
-import projectImg from "/src/assets/images/website-bg1.jpg";
 import massaImg from "/assets/images/massa.webp";
 
 function Projects() {
@@ -18,7 +17,7 @@ function Projects() {
 							name="Massa"
 							year="2024"
 							tech="React • CSS • JavaScript"
-							description="A restaurant website for a fictional restaurant. This is a long description to test the layout of the project component."
+							description="A restaurant website for one of my former restaurants. For the design, I took inspiration from another website. I tried to implement what I have learned so far in React, such as hooks and state management."
 						/>
 					</div>
 					{/* <div className={styles.right}>
