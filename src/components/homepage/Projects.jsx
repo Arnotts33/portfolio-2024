@@ -1,6 +1,7 @@
 import Project from "../ui/Project";
 import styles from "./Projects.module.css";
 import projectImg from "/src/assets/images/website-bg1.jpg";
+import massaImg from "/assets/images/massa.webp";
 
 function Projects() {
 	return (
@@ -12,31 +13,34 @@ function Projects() {
 				<div className={styles.projects}>
 					<div className={styles.left}>
 						<Project
-							img={projectImg}
-							name="FurreverFriends"
-							year="2024"
-							tech="Ruby On Rails • CSS • JavaScript"
-							description="A social media platform for pet owners to connect with other pet owners. This is a long description to test the layout of the project component."
-						/>
-					</div>
-					<div className={styles.right}>
-						<Project
-							img={projectImg}
+							link="https://massa-omega.vercel.app/"
+							img={massaImg}
 							name="Massa"
 							year="2024"
 							tech="React • CSS • JavaScript"
 							description="A restaurant website for a fictional restaurant. This is a long description to test the layout of the project component."
 						/>
 					</div>
+					{/* <div className={styles.right}>
+						<Project
+							link="#"
+							img={projectImg}
+							name="FurreverFriends - En cours de développement"
+							year="2024"
+							tech="Ruby On Rails • CSS • JavaScript"
+							description="A social media platform for pet owners to connect with other pet owners. This is a long description to test the layout of the project component."
+						/>
+					</div>
 					<div className={styles.left}>
 						<Project
+							link="#"
 							img={projectImg}
-							name="Miles"
+							name="Miles - En cours de développement"
 							year="2024"
 							tech="React • CSS • JavaScript"
 							description="A restaurant website for a fictional restaurant. This is a long description to test the layout of the project component."
 						/>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>
