@@ -5,7 +5,7 @@ import massaImg from "/assets/images/massa.webp";
 
 function Projects() {
 	return (
-		<section className={styles.projects__section}>
+		<section className={styles.projects__section} id="projects">
 			<div className={styles.projects__container}>
 				<div className={styles.title}>
 					<h1>Selected Work</h1>

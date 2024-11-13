@@ -13,10 +13,10 @@ function Navbar() {
 						<a href="#about">about</a>
 					</li>
 					<li>
-						<a href="#">skills</a>
+						<a href="#skills">skills</a>
 					</li>
 					<li>
-						<a href="#">projects</a>
+						<a href="#projects">projects</a>
 					</li>
 				</ul>
 				<button className="btn button--primary">

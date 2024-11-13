@@ -11,7 +11,7 @@ import {
 
 function Skills() {
 	return (
-		<section className={styles.skills__section}>
+		<section className={styles.skills__section} id="skills">
 			<div className={styles.skills__container}>
 				<h1>Skills</h1>
 				<div className={styles.skills__box}>

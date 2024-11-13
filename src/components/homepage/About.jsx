@@ -3,7 +3,7 @@ import arnaud from "/assets/images/arnaud-cook.webp";
 
 function About() {
 	return (
-		<section className={styles.about__section} id="about">
+		<section className={styles.about__section}>
 			<div className={styles.about__flex_container}>
 				<div className={styles.about__image_container}>
 					<img
