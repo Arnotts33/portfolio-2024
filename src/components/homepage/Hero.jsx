@@ -1,3 +1,6 @@
+import { useRef } from "react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import styles from "./Hero.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -5,10 +8,7 @@ import {
 	faLinkedin,
 	faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
 import beach from "/assets/images/beach-bg.jpg";
-import { useRef } from "react";
 
 function Hero() {
 	const heroContainer = useRef(null);

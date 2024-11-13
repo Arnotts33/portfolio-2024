@@ -1,5 +1,6 @@
 import "./App.css";
 import { useEffect } from "react";
+import LocomotiveScroll from "locomotive-scroll";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 
@@ -9,7 +10,6 @@ import Role from "./components/homepage/Role";
 import Skills from "./components/homepage/Skills";
 import Projects from "./components/homepage/Projects";
 import Contact from "./components/homepage/Contact";
-import LocomotiveScroll from "locomotive-scroll";
 
 function App() {
 	useEffect(() => {

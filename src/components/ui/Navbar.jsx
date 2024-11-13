@@ -1,12 +1,14 @@
 import styles from "./Navbar.module.css";
+import logo from "/assets/images/AL-logo.webp";
 
 function Navbar() {
 	return (
 		// <header className={styles.header} data-aos="fade-down">
 		<header className={styles.header}>
-			<h1>
+			<img src={logo} alt="logo" width={70} />
+			{/* <h1>
 				AL<span>.</span>
-			</h1>
+			</h1> */}
 			<nav className={styles.header__nav}>
 				<ul className={styles.header__menu}>
 					<li>
