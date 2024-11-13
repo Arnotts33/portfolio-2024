@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 import styles from "./About.module.css";
 import arnaud from "/assets/images/arnaud-cook.webp";
 
-function About() {
+function About({ toggleAbout }) {
 	return (
 		<section className={styles.about__section}>
 			<div className={styles.about__flex_container}>
@@ -31,15 +32,21 @@ function About() {
 						skills (communication, teamwork, creativity... ).
 					</p>
 					<p>
-						When I am not coding, I still enjoy cooking,
+						When I am not coding, I still enjoy cooking as well as
 						photography, playing guitar, gaming and building things
 						(digital or not!).
 					</p>
-					{/* <button className={styles.about__btn}>My Story</button> */}
+					<button className={styles.about__btn} onClick={toggleAbout}>
+						Back
+					</button>
 				</div>
 			</div>
 		</section>
 	);
 }
+
+About.propTypes = {
+	toggleAbout: PropTypes.func.isRequired,
+};
 
 export default About;

@@ -35,7 +35,7 @@ function Role() {
 			</section>
 		);
 
-	if (isToggleAbout) return <About />;
+	if (isToggleAbout) return <About toggleAbout={handleToggleAbout} />;
 }
 
 export default Role;
