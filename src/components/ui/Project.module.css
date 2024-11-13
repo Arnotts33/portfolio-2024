@@ -11,13 +11,8 @@
 	aspect-ratio: 1/0.9;
 	object-fit: cover;
 	object-position: top;
-	transition: all 0.2s ease-in;
-}
-
-.project__container img:hover {
-	cursor: pointer;
 	border-radius: 1rem;
-	transform: scale(1.02);
+	cursor: pointer;
 }
 
 .project__container h2 {
