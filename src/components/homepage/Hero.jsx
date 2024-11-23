@@ -19,13 +19,14 @@ function Hero() {
 		const tl = gsap.timeline();
 
 		tl.from(heroImg.current, {
+			opacity: 0,
 			scale: 2,
 			duration: 3.2,
 			ease: "power4.inOut",
 		}).from(
 			titles.current,
 			{
-				y: 200,
+				y: 300,
 				opacity: 0,
 				duration: 2,
 				ease: "power3.inOut",
