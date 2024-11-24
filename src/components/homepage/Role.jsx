@@ -17,13 +17,13 @@ function Role() {
 
 		ScrollTrigger.create({
 			trigger: role.current,
-			markers: true,
+			// markers: true,
 			start: "top 80%",
 			end: "bottom 0%",
 
 			onEnter: () => {
 				tl.to(section.current, {
-					duration: 2.0,
+					duration: 1.0,
 					backgroundColor: "var(--bg-dark)",
 					ease: "power4.inOut",
 				});
@@ -31,7 +31,7 @@ function Role() {
 
 			onLeaveBack: () => {
 				tl.to(section.current, {
-					duration: 2.0,
+					duration: 1.0,
 					backgroundColor: "var(--bg-light)",
 					ease: "power4.inOut",
 				});
