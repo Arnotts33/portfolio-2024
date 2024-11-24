@@ -17,23 +17,23 @@ function Role() {
 
 		ScrollTrigger.create({
 			trigger: role.current,
-			// markers: true,
+			markers: true,
 			start: "top 80%",
 			end: "bottom 0%",
 
 			onEnter: () => {
 				tl.to(section.current, {
 					duration: 1.0,
-					backgroundColor: "var(--bg-dark)",
-					ease: "power4.inOut",
+					backgroundColor: "#0e0e0c",
+					ease: "power4.Out",
 				});
 			},
 
 			onLeaveBack: () => {
 				tl.to(section.current, {
 					duration: 1.0,
-					backgroundColor: "var(--bg-light)",
-					ease: "power4.inOut",
+					backgroundColor: "#f8f8f6",
+					ease: "power4.Out",
 				});
 			},
 		});
