@@ -1,8 +1,6 @@
 import "./App.css";
 import { useEffect } from "react";
-import LocomotiveScroll from "locomotive-scroll";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+import Lenis from "lenis";
 
 import Hero from "./components/homepage/Hero";
 import Navbar from "./components/ui/Navbar";
@@ -13,11 +11,14 @@ import Contact from "./components/homepage/Contact";
 
 function App() {
 	useEffect(() => {
-		const locomotiveScroll = new LocomotiveScroll();
+		const lenis = new Lenis();
 
-		return () => {
-			locomotiveScroll.destroy();
-		};
+		function raf(time) {
+			lenis.raf(time);
+			requestAnimationFrame(raf);
+		}
+
+		requestAnimationFrame(raf);
 	}, []);
 
 	return (

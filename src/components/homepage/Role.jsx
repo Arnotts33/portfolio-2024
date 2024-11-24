@@ -17,7 +17,6 @@ function Role() {
 
 		ScrollTrigger.create({
 			trigger: role.current,
-			markers: true,
 			start: "top 80%",
 			end: "bottom 0%",
 

@@ -20,7 +20,7 @@ function Hero() {
 
 		tl.from(heroImg.current, {
 			opacity: 0,
-			scale: 2,
+			scale: 1.5,
 			duration: 3.2,
 			ease: "power4.inOut",
 		}).from(
@@ -33,7 +33,7 @@ function Hero() {
 			},
 			"-=2.5"
 		);
-	});
+	}, []);
 
 	return (
 		<section ref={heroContainer} className={styles.hero__container}>
@@ -68,12 +68,7 @@ function Hero() {
 						Developer
 					</h1>
 				</div>
-				<div
-					className={styles.hero__image}
-					ref={heroImg}
-					data-scroll
-					data-scroll-speed="0.3"
-				>
+				<div className={styles.hero__image} ref={heroImg}>
 					<img src={beach} alt="beach background" />
 				</div>
 			</div>
