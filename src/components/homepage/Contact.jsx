@@ -1,4 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Form from "../ui/Form";
 import styles from "./Contact.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,9 +9,41 @@ import {
 	faLinkedin,
 	faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { useGSAP } from "@gsap/react";
 
 function Contact() {
 	const [time, setTime] = useState(new Date().toLocaleTimeString());
+	const section = useRef(null);
+	const title = useRef(null);
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	useGSAP(() => {
+		const tl = gsap.timeline();
+
+		ScrollTrigger.create({
+			trigger: title.current,
+			start: "top 90%",
+			end: "bottom 0%",
+			markers: true,
+
+			onEnter: () => {
+				tl.to(section.current, {
+					duration: 1.3,
+					backgroundColor: "#f8f8f6",
+					ease: "power4.Out",
+				});
+			},
+
+			onLeaveBack: () => {
+				tl.to(section.current, {
+					duration: 1.3,
+					backgroundColor: "#0e0e0c",
+					ease: "power4.Out",
+				});
+			},
+		});
+	}, [section.current]);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
@@ -20,8 +54,8 @@ function Contact() {
 	}, []);
 
 	return (
-		<section className={styles.contact__section} id="contact">
-			<h1>Get In Touch</h1>
+		<section className={styles.contact__section} id="contact" ref={section}>
+			<h1 ref={title}>Get In Touch</h1>
 			<div className={styles.contact__container}>
 				<div className={styles.contact__form_container}>
 					<h2>Interested in working together?</h2>
