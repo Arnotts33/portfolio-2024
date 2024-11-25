@@ -39,7 +39,7 @@ function Skills() {
 						{
 							duration: 2,
 							opacity: 0,
-							y: 300,
+							y: 200,
 							ease: "power4.inOut",
 						},
 						"-=1.6"
@@ -48,7 +48,7 @@ function Skills() {
 						skills.current,
 						{
 							duration: 2,
-							y: 300,
+							y: 200,
 							opacity: 0,
 							ease: "power4.inOut",
 						},
@@ -56,15 +56,15 @@ function Skills() {
 					);
 			},
 
-			onLeaveBack: () => {
-				tl.to(section.current, {
-					duration: 1.3,
-					backgroundColor: "#0e0e0c",
-					ease: "power4.Out",
-				});
-			},
+			// onLeaveBack: () => {
+			// 	tl.to(section.current, {
+			// 		duration: 1.3,
+			// 		backgroundColor: "#0e0e0c",
+			// 		ease: "power4.Out",
+			// 	});
+			// },
 		});
-	}, [section.current]);
+	}, []);
 
 	return (
 		<section className={styles.skills__section} ref={section} id="skills">

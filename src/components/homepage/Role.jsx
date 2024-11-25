@@ -32,7 +32,7 @@ function Role() {
 						{
 							duration: 2,
 							opacity: 0,
-							y: 300,
+							y: 150,
 							ease: "power4.inOut",
 						},
 						"-=1.6"
@@ -41,7 +41,7 @@ function Role() {
 						role.current,
 						{
 							duration: 2,
-							y: 300,
+							y: 150,
 							opacity: 0,
 							ease: "power4.inOut",
 						},
@@ -49,13 +49,13 @@ function Role() {
 					);
 			},
 
-			onLeaveBack: () => {
-				tl.to(section.current, {
-					duration: 1.3,
-					backgroundColor: "#f8f8f6",
-					ease: "power4.Out",
-				});
-			},
+			// onLeaveBack: () => {
+			// 	tl.to(section.current, {
+			// 		duration: 1.3,
+			// 		backgroundColor: "#f8f8f6",
+			// 		ease: "power4.Out",
+			// 	});
+			// },
 		});
 	}, [section.current]);
 

@@ -31,22 +31,22 @@ function Projects() {
 					{
 						duration: 2,
 						opacity: 0,
-						y: 100,
+						y: 50,
 						ease: "power4.inOut",
 					},
 					"-=1.6"
 				);
 			},
 
-			onLeaveBack: () => {
-				tl.to(section.current, {
-					duration: 1.3,
-					backgroundColor: "#f8f8f6",
-					ease: "power4.Out",
-				});
-			},
+			// onLeaveBack: () => {
+			// 	tl.to(section.current, {
+			// 		duration: 1.3,
+			// 		backgroundColor: "#f8f8f6",
+			// 		ease: "power4.Out",
+			// 	});
+			// },
 		});
-	}, [section.current]);
+	}, []);
 
 	return (
 		<section
