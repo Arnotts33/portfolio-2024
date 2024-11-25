@@ -15,8 +15,7 @@ import { useGSAP } from "@gsap/react";
 
 function Skills() {
 	const section = useRef(null);
-	const text = useRef(null);
-	const list = useRef(null);
+	const skills = useRef(null);
 	const title = useRef(null);
 
 	gsap.registerPlugin(ScrollTrigger);
@@ -28,7 +27,6 @@ function Skills() {
 			trigger: title.current,
 			start: "top bottom",
 			end: "bottom 0%",
-			markers: true,
 
 			onEnter: () => {
 				tl.to(section.current, {
@@ -47,17 +45,7 @@ function Skills() {
 						"-=1.3"
 					)
 					.from(
-						text.current,
-						{
-							duration: 2,
-							y: 300,
-							opacity: 0,
-							ease: "power4.inOut",
-						},
-						"-=1.3"
-					)
-					.from(
-						list.current,
+						skills.current,
 						{
 							duration: 2,
 							y: 300,
@@ -82,8 +70,8 @@ function Skills() {
 		<section className={styles.skills__section} ref={section} id="skills">
 			<div className={styles.skills__container}>
 				<h1 ref={title}>Skills</h1>
-				<div className={styles.skills__box}>
-					<div className={styles.skills__box_text} ref={text}>
+				<div className={styles.skills__box} ref={skills}>
+					<div className={styles.skills__box_text}>
 						<h2>my digital spice rack.</h2>
 						<p>
 							This is my actual tech stack, the list of the main
@@ -93,7 +81,7 @@ function Skills() {
 							tech.
 						</p>
 					</div>
-					<div className={styles.skills__box_list} ref={list}>
+					<div className={styles.skills__box_list}>
 						<ul>
 							<li>
 								<div className={styles.icon__container}>

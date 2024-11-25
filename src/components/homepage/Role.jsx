@@ -16,8 +16,8 @@ function Role() {
 		const tl = gsap.timeline();
 
 		ScrollTrigger.create({
-			trigger: role.current,
-			start: "top 80%",
+			trigger: section.current,
+			start: "top bottom",
 			end: "bottom 0%",
 
 			onEnter: () => {
@@ -25,7 +25,16 @@ function Role() {
 					duration: 1.3,
 					backgroundColor: "#0e0e0c",
 					ease: "power4.Out",
-				});
+				}).from(
+					role.current,
+					{
+						duration: 2.4,
+						opacity: 0,
+						y: 300,
+						ease: "power4.inOut",
+					},
+					"-=2.0"
+				);
 			},
 
 			onLeaveBack: () => {
@@ -45,18 +54,24 @@ function Role() {
 	if (!isToggleAbout)
 		return (
 			<section className={styles.role__section} ref={section} id="about">
-				<div className={styles.role__container}>
-					<p ref={role}>
-						Once a <span>chef</span>, I am now a
-					</p>
+				<div className={styles.role__container} ref={role}>
+					<div>
+						<p>
+							Once a <span>chef</span>, I am now a
+						</p>
+					</div>
 					<div className={styles.role__container_title}>
 						<h1>Frontend Developer</h1>
 						<p>based in Bordeaux, France</p>
 					</div>
 					<p>
-						I love creating and crafting impactful digital
-						experiences that engage and resonate with people through
-						creative design and development.
+						I specialize in crafting modern, user-friendly web
+						interfaces with a strong focus on the hospitality
+						industry, including restaurants, wineries, and beverage
+						businesses. Drawing on my 15 years of experience as a
+						chef and restaurant manager, I understand the needs of
+						these sectors and translate them into tailored digital
+						solutions.
 					</p>
 					<button
 						className="btn btn--secondary"
