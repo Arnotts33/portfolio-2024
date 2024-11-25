@@ -22,7 +22,7 @@ function Contact() {
 		const tl = gsap.timeline();
 
 		ScrollTrigger.create({
-			trigger: title.current,
+			trigger: section.current,
 			start: "top bottom",
 			end: "bottom 0%",
 
@@ -36,7 +36,7 @@ function Contact() {
 					{
 						duration: 2,
 						opacity: 0,
-						y: 200,
+						y: 100,
 						ease: "power4.inOut",
 					},
 					"-=1.6"

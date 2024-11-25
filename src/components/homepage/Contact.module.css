@@ -15,8 +15,10 @@
 
 .contact__box {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	gap: 6rem;
+	width: 100%;
 }
 
 .contact__container h1 {
@@ -176,6 +178,10 @@
 
 @media (max-width: 900px) {
 	.contact__container {
+		padding-block: 2rem;
+	}
+
+	.contact__box {
 		flex-direction: column;
 		gap: 4rem;
 	}
