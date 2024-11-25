@@ -23,7 +23,7 @@ function Contact() {
 
 		ScrollTrigger.create({
 			trigger: title.current,
-			start: "top 90%",
+			start: "top bottom",
 			end: "bottom 0%",
 
 			onEnter: () => {
@@ -31,7 +31,16 @@ function Contact() {
 					duration: 1.3,
 					backgroundColor: "#f8f8f6",
 					ease: "power4.Out",
-				});
+				}).from(
+					title.current,
+					{
+						duration: 2,
+						opacity: 0,
+						y: 200,
+						ease: "power4.inOut",
+					},
+					"-=1.6"
+				);
 			},
 
 			onLeaveBack: () => {
@@ -54,72 +63,74 @@ function Contact() {
 
 	return (
 		<section className={styles.contact__section} id="contact" ref={section}>
-			<h1 ref={title}>Get In Touch</h1>
 			<div className={styles.contact__container}>
-				<div className={styles.contact__form_container}>
-					<h2>Interested in working together?</h2>
-					<p>
-						I am open to work and looking for freelance
-						opportunities or a position in startups, agencies and
-						design studios.
-					</p>
-					<Form />
-				</div>
-				<div className={styles.personal_info__container}>
-					<div className={styles.contact}>
-						<h3>Contact Details</h3>
-						<p>alahaut.dev@gmail.com</p>
-						<p>+33 6 03 66 29 39</p>
+				<h1 ref={title}>Get In Touch</h1>
+				<div className={styles.contact__box}>
+					<div className={styles.contact__form_container}>
+						<h2>Interested in working together?</h2>
+						<p>
+							I am open to work and looking for freelance
+							opportunities or a position in startups, agencies
+							and design studios.
+						</p>
+						<Form />
 					</div>
-					<div className={styles.socials}>
-						<h3>Socials</h3>
-						<div className={styles.socials__links}>
-							<a
-								href="https://github.com/Arnotts33"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faGithub}
-									size="lg"
-									style={{ color: "#80806b" }}
-								/>{" "}
-								Github
-							</a>
-							<a
-								href="https://www.linkedin.com/in/arnaudlht/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faLinkedin}
-									size="lg"
-									style={{ color: "#80806b" }}
-								/>{" "}
-								LinkedIn
-							</a>
-							<a
-								href="https://www.instagram.com/arnaudlahaut/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faSquareInstagram}
-									size="lg"
-									style={{ color: "#80806b" }}
-								/>{" "}
-								Instagram
-							</a>
+					<div className={styles.personal_info__container}>
+						<div className={styles.contact}>
+							<h3>Contact Details</h3>
+							<p>alahaut.dev@gmail.com</p>
+							<p>+33 6 03 66 29 39</p>
 						</div>
-					</div>
-					<div className={styles.location}>
-						<h3>Location</h3>
-						<p>Bordeaux, France</p>
-						<p>{time}</p>
-					</div>
-					<div className={styles.availability}>
-						<span className={styles.dot}></span>
-						<p>Available for work</p>
+						<div className={styles.socials}>
+							<h3>Socials</h3>
+							<div className={styles.socials__links}>
+								<a
+									href="https://github.com/Arnotts33"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<FontAwesomeIcon
+										icon={faGithub}
+										size="lg"
+										style={{ color: "#80806b" }}
+									/>{" "}
+									Github
+								</a>
+								<a
+									href="https://www.linkedin.com/in/arnaudlht/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<FontAwesomeIcon
+										icon={faLinkedin}
+										size="lg"
+										style={{ color: "#80806b" }}
+									/>{" "}
+									LinkedIn
+								</a>
+								<a
+									href="https://www.instagram.com/arnaudlahaut/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<FontAwesomeIcon
+										icon={faSquareInstagram}
+										size="lg"
+										style={{ color: "#80806b" }}
+									/>{" "}
+									Instagram
+								</a>
+							</div>
+						</div>
+						<div className={styles.location}>
+							<h3>Location</h3>
+							<p>Bordeaux, France</p>
+							<p>{time}</p>
+						</div>
+						<div className={styles.availability}>
+							<span className={styles.dot}></span>
+							<p>Available for work</p>
+						</div>
 					</div>
 				</div>
 			</div>

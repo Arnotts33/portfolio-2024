@@ -13,18 +13,18 @@
 	max-width: 87.5rem;
 }
 
+.skills__box {
+	display: flex;
+	justify-content: space-between;
+	gap: 6rem;
+}
+
 .skills__container h1 {
 	font-size: clamp(4rem, 12vw, 6.75rem);
 	color: var(--heading-primary);
 	font-weight: 800;
 	text-transform: uppercase;
 	margin-bottom: clamp(4rem, 8vw, 8rem);
-}
-
-.skills__box {
-	display: flex;
-	justify-content: space-between;
-	gap: 6rem;
 }
 
 .skills__box_text h2 {
