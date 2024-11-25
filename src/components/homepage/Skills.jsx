@@ -15,7 +15,9 @@ import { useGSAP } from "@gsap/react";
 
 function Skills() {
 	const section = useRef(null);
-	const container = useRef(null);
+	const text = useRef(null);
+	const list = useRef(null);
+	const title = useRef(null);
 
 	gsap.registerPlugin(ScrollTrigger);
 
@@ -23,16 +25,47 @@ function Skills() {
 		const tl = gsap.timeline();
 
 		ScrollTrigger.create({
-			trigger: container.current,
+			trigger: title.current,
 			start: "top bottom",
 			end: "bottom 0%",
+			markers: true,
 
 			onEnter: () => {
 				tl.to(section.current, {
 					duration: 1.3,
 					backgroundColor: "#f8f8f6",
 					ease: "power4.Out",
-				});
+				})
+					.from(
+						title.current,
+						{
+							duration: 2,
+							opacity: 0,
+							y: 300,
+							ease: "power4.inOut",
+						},
+						"-=1.3"
+					)
+					.from(
+						text.current,
+						{
+							duration: 2,
+							y: 300,
+							opacity: 0,
+							ease: "power4.inOut",
+						},
+						"-=1.3"
+					)
+					.from(
+						list.current,
+						{
+							duration: 2,
+							y: 300,
+							opacity: 0,
+							ease: "power4.inOut",
+						},
+						"-=1.3"
+					);
 			},
 
 			onLeaveBack: () => {
@@ -47,10 +80,10 @@ function Skills() {
 
 	return (
 		<section className={styles.skills__section} ref={section} id="skills">
-			<div className={styles.skills__container} ref={container}>
-				<h1>Skills</h1>
+			<div className={styles.skills__container}>
+				<h1 ref={title}>Skills</h1>
 				<div className={styles.skills__box}>
-					<div className={styles.skills__box_text}>
+					<div className={styles.skills__box_text} ref={text}>
 						<h2>my digital spice rack.</h2>
 						<p>
 							This is my actual tech stack, the list of the main
@@ -60,7 +93,7 @@ function Skills() {
 							tech.
 						</p>
 					</div>
-					<div className={styles.skills__box_list}>
+					<div className={styles.skills__box_list} ref={list}>
 						<ul>
 							<li>
 								<div className={styles.icon__container}>
