@@ -11,7 +11,7 @@
 	justify-content: space-around;
 	margin: auto;
 	gap: 3rem;
-	width: 80%;
+	width: 90%;
 	max-width: 87.5rem;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .about__btn {
-	margin-top: 6rem;
+	margin-top: 3rem;
 	border: none;
 	border-radius: 2rem;
 	color: var(--text-primary);
