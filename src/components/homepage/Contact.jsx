@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faSquareInstagram,
 	faLinkedin,
-	faGithub,
+	faSquareGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { useGSAP } from "@gsap/react";
 
@@ -83,44 +83,50 @@ function Contact() {
 						</div>
 						<div className={styles.socials}>
 							<h3>Socials</h3>
-							<div className={styles.socials__links}>
-								<a
-									href="https://github.com/Arnotts33"
-									target="_blank"
-									rel="noreferrer"
-								>
+							<ul className={styles.socials__links}>
+								<li>
 									<FontAwesomeIcon
-										icon={faGithub}
+										icon={faSquareGithub}
 										size="lg"
 										style={{ color: "#80806b" }}
 									/>{" "}
-									Github
-								</a>
-								<a
-									href="https://www.linkedin.com/in/arnaudlht/"
-									target="_blank"
-									rel="noreferrer"
-								>
+									<a
+										href="https://github.com/Arnotts33"
+										target="_blank"
+										rel="noreferrer"
+									>
+										Github
+									</a>
+								</li>
+								<li>
 									<FontAwesomeIcon
 										icon={faLinkedin}
 										size="lg"
 										style={{ color: "#80806b" }}
 									/>{" "}
-									LinkedIn
-								</a>
-								<a
-									href="https://www.instagram.com/arnaudlahaut/"
-									target="_blank"
-									rel="noreferrer"
-								>
+									<a
+										href="https://www.linkedin.com/in/arnaudlht/"
+										target="_blank"
+										rel="noreferrer"
+									>
+										LinkedIn
+									</a>
+								</li>
+								<li>
 									<FontAwesomeIcon
 										icon={faSquareInstagram}
 										size="lg"
 										style={{ color: "#80806b" }}
 									/>{" "}
-									Instagram
-								</a>
-							</div>
+									<a
+										href="https://www.instagram.com/arnaudlahaut/"
+										target="_blank"
+										rel="noreferrer"
+									>
+										Instagram
+									</a>
+								</li>
+							</ul>
 						</div>
 						<div className={styles.location}>
 							<h3>Location</h3>
