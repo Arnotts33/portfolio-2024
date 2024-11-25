@@ -1,11 +1,50 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Project from "../ui/Project";
 import styles from "./Projects.module.css";
 import massaImg from "/assets/images/massa.webp";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
 
 function Projects() {
+	const section = useRef(null);
+	const container = useRef(null);
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	useGSAP(() => {
+		const tl = gsap.timeline();
+
+		ScrollTrigger.create({
+			trigger: container.current,
+			start: "top 85%",
+			end: "bottom 0%",
+
+			onEnter: () => {
+				tl.to(section.current, {
+					duration: 1.3,
+					backgroundColor: "#0e0e0c",
+					ease: "power4.Out",
+				});
+			},
+
+			onLeaveBack: () => {
+				tl.to(section.current, {
+					duration: 1.3,
+					backgroundColor: "#f8f8f6",
+					ease: "power4.Out",
+				});
+			},
+		});
+	}, [section.current]);
+
 	return (
-		<section className={styles.projects__section} id="projects">
-			<div className={styles.projects__container}>
+		<section
+			className={styles.projects__section}
+			id="projects"
+			ref={section}
+		>
+			<div className={styles.projects__container} ref={container}>
 				<div className={styles.title}>
 					<h1>Selected Work</h1>
 				</div>

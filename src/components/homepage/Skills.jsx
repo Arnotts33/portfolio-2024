@@ -26,7 +26,6 @@ function Skills() {
 			trigger: container.current,
 			start: "top bottom",
 			end: "bottom 0%",
-			markers: true,
 
 			onEnter: () => {
 				tl.to(section.current, {
