@@ -1,4 +1,6 @@
 import styles from "./Skills.module.css";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faReact,
@@ -8,11 +10,45 @@ import {
 	faFigma,
 	faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
 
 function Skills() {
+	const section = useRef(null);
+	const container = useRef(null);
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	useGSAP(() => {
+		const tl = gsap.timeline();
+
+		ScrollTrigger.create({
+			trigger: container.current,
+			start: "top bottom",
+			end: "bottom 0%",
+			markers: true,
+
+			onEnter: () => {
+				tl.to(section.current, {
+					duration: 1.3,
+					backgroundColor: "#f8f8f6",
+					ease: "power4.Out",
+				});
+			},
+
+			onLeaveBack: () => {
+				tl.to(section.current, {
+					duration: 1.3,
+					backgroundColor: "#0e0e0c",
+					ease: "power4.Out",
+				});
+			},
+		});
+	}, [section.current]);
+
 	return (
-		<section className={styles.skills__section} id="skills">
-			<div className={styles.skills__container}>
+		<section className={styles.skills__section} ref={section} id="skills">
+			<div className={styles.skills__container} ref={container}>
 				<h1>Skills</h1>
 				<div className={styles.skills__box}>
 					<div className={styles.skills__box_text}>
