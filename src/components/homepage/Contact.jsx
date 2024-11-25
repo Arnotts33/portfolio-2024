@@ -25,7 +25,6 @@ function Contact() {
 			trigger: title.current,
 			start: "top 90%",
 			end: "bottom 0%",
-			markers: true,
 
 			onEnter: () => {
 				tl.to(section.current, {
