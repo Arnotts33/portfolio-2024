@@ -36,8 +36,46 @@
 	font-size: 1.2rem;
 }
 
-.contact_btn {
+.header__menu a {
+	color: var(--text-secondary);
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	position: relative;
+}
+
+.header__menu a:hover {
+	color: var(--heading-primary);
+}
+
+.header__menu a::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 2px;
+	bottom: -3px;
+	left: 0;
+	background-color: var(--heading-primary);
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+.header__menu a:hover::before {
+	transform: scaleX(1);
+}
+
+.header__nav button a {
 	color: var(--text-primary);
+}
+
+.header__nav button {
+	transition: all 0.3s ease;
+}
+
+.header__nav button:hover {
+	background-color: var(--heading-primary);
 }
 
 @media (max-width: 900px) {
