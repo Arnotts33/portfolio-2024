@@ -42,7 +42,7 @@ function Skills() {
 							y: 300,
 							ease: "power4.inOut",
 						},
-						"-=1.3"
+						"-=1.6"
 					)
 					.from(
 						skills.current,
@@ -52,7 +52,7 @@ function Skills() {
 							opacity: 0,
 							ease: "power4.inOut",
 						},
-						"-=1.3"
+						"-=1.6"
 					);
 			},
 

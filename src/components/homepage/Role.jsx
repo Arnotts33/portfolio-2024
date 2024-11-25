@@ -8,6 +8,7 @@ import { useGSAP } from "@gsap/react";
 function Role() {
 	const [isToggleAbout, setIsToggleAbout] = useState(false);
 	const section = useRef(null);
+	const title = useRef(null);
 	const role = useRef(null);
 
 	gsap.registerPlugin(ScrollTrigger);
@@ -25,16 +26,27 @@ function Role() {
 					duration: 1.3,
 					backgroundColor: "#0e0e0c",
 					ease: "power4.Out",
-				}).from(
-					role.current,
-					{
-						duration: 2.4,
-						opacity: 0,
-						y: 300,
-						ease: "power4.inOut",
-					},
-					"-=2.0"
-				);
+				})
+					.from(
+						title.current,
+						{
+							duration: 2,
+							opacity: 0,
+							y: 300,
+							ease: "power4.inOut",
+						},
+						"-=1.6"
+					)
+					.from(
+						role.current,
+						{
+							duration: 2,
+							y: 300,
+							opacity: 0,
+							ease: "power4.inOut",
+						},
+						"-=1.6"
+					);
 			},
 
 			onLeaveBack: () => {
@@ -54,31 +66,33 @@ function Role() {
 	if (!isToggleAbout)
 		return (
 			<section className={styles.role__section} ref={section} id="about">
-				<div className={styles.role__container} ref={role}>
-					<div>
+				<div className={styles.role__container}>
+					<div ref={title}>
 						<p>
 							Once a <span>chef</span>, I am now a
 						</p>
 					</div>
-					<div className={styles.role__container_title}>
-						<h1>Frontend Developer</h1>
-						<p>based in Bordeaux, France</p>
+					<div ref={role}>
+						<div className={styles.role__container_title}>
+							<h1>Frontend Developer</h1>
+							<p>based in Bordeaux, France</p>
+						</div>
+						<p>
+							I specialize in crafting modern, user-friendly web
+							interfaces with a strong focus on the hospitality
+							industry, including restaurants, wineries, and
+							beverage businesses. Drawing on my 15 years of
+							experience as a chef and restaurant manager, I
+							understand the needs of these sectors and translate
+							them into tailored digital solutions.
+						</p>
+						<button
+							className="btn btn--secondary"
+							onClick={handleToggleAbout}
+						>
+							My Story
+						</button>
 					</div>
-					<p>
-						I specialize in crafting modern, user-friendly web
-						interfaces with a strong focus on the hospitality
-						industry, including restaurants, wineries, and beverage
-						businesses. Drawing on my 15 years of experience as a
-						chef and restaurant manager, I understand the needs of
-						these sectors and translate them into tailored digital
-						solutions.
-					</p>
-					<button
-						className="btn btn--secondary"
-						onClick={handleToggleAbout}
-					>
-						My Story
-					</button>
 				</div>
 			</section>
 		);

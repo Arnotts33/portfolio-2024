@@ -66,12 +66,6 @@
 
 /* Media Queries */
 
-@media (max-width: 1024px) {
-	.skills__box {
-		/* margin-top: 5rem; */
-	}
-}
-
 @media (max-width: 768px) {
 	.skills__box {
 		flex-direction: column;

@@ -9,6 +9,7 @@ import { useGSAP } from "@gsap/react";
 function Projects() {
 	const section = useRef(null);
 	const container = useRef(null);
+	const title = useRef(null);
 
 	gsap.registerPlugin(ScrollTrigger);
 
@@ -17,7 +18,7 @@ function Projects() {
 
 		ScrollTrigger.create({
 			trigger: container.current,
-			start: "top 85%",
+			start: "top bottom",
 			end: "bottom 0%",
 
 			onEnter: () => {
@@ -25,7 +26,16 @@ function Projects() {
 					duration: 1.3,
 					backgroundColor: "#0e0e0c",
 					ease: "power4.Out",
-				});
+				}).from(
+					title.current,
+					{
+						duration: 2,
+						opacity: 0,
+						y: 100,
+						ease: "power4.inOut",
+					},
+					"-=1.6"
+				);
 			},
 
 			onLeaveBack: () => {
@@ -45,7 +55,7 @@ function Projects() {
 			ref={section}
 		>
 			<div className={styles.projects__container} ref={container}>
-				<div className={styles.title}>
+				<div className={styles.title} ref={title}>
 					<h1>Selected Work</h1>
 				</div>
 				<div className={styles.projects}>
