@@ -5,12 +5,12 @@ import styles from "./Role.module.css";
 import About from "./About";
 import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(ScrollTrigger);
-
 function Role() {
 	const [isToggleAbout, setIsToggleAbout] = useState(false);
 	const section = useRef(null);
 	const role = useRef(null);
+
+	gsap.registerPlugin(ScrollTrigger);
 
 	useGSAP(() => {
 		const tl = gsap.timeline();
@@ -22,7 +22,7 @@ function Role() {
 
 			onEnter: () => {
 				tl.to(section.current, {
-					duration: 1.0,
+					duration: 1.3,
 					backgroundColor: "#0e0e0c",
 					ease: "power4.Out",
 				});
@@ -30,13 +30,13 @@ function Role() {
 
 			onLeaveBack: () => {
 				tl.to(section.current, {
-					duration: 1.0,
+					duration: 1.3,
 					backgroundColor: "#f8f8f6",
 					ease: "power4.Out",
 				});
 			},
 		});
-	});
+	}, [section.current]);
 
 	function handleToggleAbout() {
 		setIsToggleAbout((prevToggleAbout) => !prevToggleAbout);
