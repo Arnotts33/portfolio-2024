@@ -90,7 +90,7 @@ function Hero() {
 					</h1>
 				</div>
 				<div className={styles.hero__image} ref={heroImg}>
-					<img src={beach} alt="beach background" />
+					<img src={beach} alt="beach background" loading="lazy" />
 				</div>
 			</div>
 
