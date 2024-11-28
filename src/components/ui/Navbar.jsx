@@ -25,10 +25,7 @@ function Navbar() {
 	return (
 		// <header className={styles.header} data-aos="fade-down">
 		<header className={styles.header} ref={headerSection}>
-			<img src={logo} alt="logo" width={70} />
-			{/* <h1>
-				AL<span>.</span>
-			</h1> */}
+			<img src={logo} alt="logo" className={styles.logo} />
 			<nav className={styles.header__nav}>
 				<ul className={styles.header__menu}>
 					<li>

@@ -22,9 +22,9 @@ function Role() {
 			end: "bottom 0%",
 
 			onEnter: () => {
-				tl.from(section.current, {
+				tl.to(section.current, {
 					duration: 1.3,
-					backgroundColor: "#f8f8f6",
+					backgroundColor: "#0e0e0c",
 					ease: "power4.Out",
 				})
 					.from(
