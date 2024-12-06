@@ -8,11 +8,16 @@
 
 .project__container img {
 	width: 100%;
-	aspect-ratio: 1/0.9;
+	aspect-ratio: 1/0.75;
 	object-fit: cover;
 	object-position: top;
-	border-radius: 1rem;
 	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.project__container img:hover {
+	border-radius: 0.5rem;
+	transform: scale(1.02);
 }
 
 .project__container h2 {

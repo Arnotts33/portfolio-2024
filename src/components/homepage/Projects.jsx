@@ -3,6 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Project from "../ui/Project";
 import styles from "./Projects.module.css";
 import massaImg from "/assets/images/massa.webp";
+import kedemImg from "/assets/images/kedem.webp";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 
@@ -69,26 +70,16 @@ function Projects() {
 							description="A restaurant website for one of my former restaurants. For the design, I took inspiration from another website. I tried to implement what I have learned so far in React, such as hooks and state management."
 						/>
 					</div>
-					{/* <div className={styles.right}>
+					<div className={styles.right}>
 						<Project
 							link="#"
-							img={projectImg}
-							name="FurreverFriends - En cours de développement"
-							year="2024"
-							tech="Ruby On Rails • CSS • JavaScript"
-							description="A social media platform for pet owners to connect with other pet owners. This is a long description to test the layout of the project component."
-						/>
-					</div>
-					<div className={styles.left}>
-						<Project
-							link="#"
-							img={projectImg}
-							name="Miles - En cours de développement"
+							img={kedemImg}
+							name="Kedem"
 							year="2024"
 							tech="React • CSS • JavaScript"
-							description="A restaurant website for a fictional restaurant. This is a long description to test the layout of the project component."
+							description="Design and development of the website for Kedem, a Mediterranean-Oriental restaurant. The goal was to create a modern and elegant site that reflects the restaurant’s warm and authentic identity while offering a seamless user experience."
 						/>
-					</div> */}
+					</div>
 				</div>
 			</div>
 		</section>
