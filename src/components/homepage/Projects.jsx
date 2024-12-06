@@ -72,7 +72,7 @@ function Projects() {
 					</div>
 					<div className={styles.right}>
 						<Project
-							link="#"
+							link="https://kedem.vercel.app/"
 							img={kedemImg}
 							name="Kedem"
 							year="2024"
