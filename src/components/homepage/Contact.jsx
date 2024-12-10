@@ -70,7 +70,14 @@ function Contact() {
 					<div className={styles.personal_info__container}>
 						<div className={styles.contact}>
 							<h3>Contact Details</h3>
-							<p>alahaut.dev@gmail.com</p>
+							<p>
+								<a
+									href="mailto:alahaut.dev@gmail.com"
+									aria-label="Send an email to the website owner"
+								>
+									alahaut.dev@gmail.com
+								</a>
+							</p>
 							<p>+33 6 03 66 29 39</p>
 						</div>
 						<div className={styles.socials}>
