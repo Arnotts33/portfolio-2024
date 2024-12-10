@@ -70,14 +70,6 @@
 	color: var(--text-primary);
 }
 
-.header__nav button {
-	transition: all 0.3s ease;
-}
-
-.header__nav button:hover {
-	background-color: var(--heading-primary);
-}
-
 @media (max-width: 900px) {
 	.header__menu {
 		display: none;

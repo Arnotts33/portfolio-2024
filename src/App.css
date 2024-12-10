@@ -48,6 +48,11 @@ body {
 
 .button--primary {
 	background-color: var(--bg-dark);
+	transition: all 0.3s ease;
+}
+
+.button--primary:hover {
+	background-color: var(--heading-primary);
 }
 
 .btn--secondary {
