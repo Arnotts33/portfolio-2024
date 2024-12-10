@@ -1,7 +1,7 @@
 /* Hero section */
 
 .hero__container {
-	min-height: calc(100vh - 8rem);
+	min-height: calc(100vh - 12rem);
 }
 
 .hero {

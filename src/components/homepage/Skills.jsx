@@ -55,14 +55,6 @@ function Skills() {
 						"-=1.6"
 					);
 			},
-
-			// onLeaveBack: () => {
-			// 	tl.to(section.current, {
-			// 		duration: 1.3,
-			// 		backgroundColor: "#0e0e0c",
-			// 		ease: "power4.Out",
-			// 	});
-			// },
 		});
 	}, []);
 

@@ -38,14 +38,6 @@ function Projects() {
 					"-=1.6"
 				);
 			},
-
-			// onLeaveBack: () => {
-			// 	tl.to(section.current, {
-			// 		duration: 1.3,
-			// 		backgroundColor: "#f8f8f6",
-			// 		ease: "power4.Out",
-			// 	});
-			// },
 		});
 	}, []);
 
