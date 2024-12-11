@@ -48,14 +48,6 @@ function Role() {
 						"-=1.6"
 					);
 			},
-
-			// onLeaveBack: () => {
-			// 	tl.to(section.current, {
-			// 		duration: 1.3,
-			// 		backgroundColor: "#f8f8f6",
-			// 		ease: "power4.Out",
-			// 	});
-			// },
 		});
 	}, [section.current]);
 
@@ -69,28 +61,28 @@ function Role() {
 				<div className={styles.role__container}>
 					<div ref={title}>
 						<p>
-							Once a <span>chef</span>, I am now a
+							Ancien <span>chef</span>, je suis désormais{" "}
 						</p>
 					</div>
 					<div ref={role}>
 						<div className={styles.role__container_title}>
-							<h1>Frontend Developer</h1>
-							<p>based in Bordeaux, France</p>
+							<h1>Développeur Frontend</h1>
+							<p>basé à Bordeaux, France</p>
 						</div>
 						<p>
-							I specialize in crafting modern, user-friendly web
-							interfaces with a strong focus on the hospitality
-							industry, including restaurants, wineries, and
-							beverage businesses. Drawing on my 15 years of
-							experience as a chef and restaurant manager, I
-							understand the needs of these sectors and translate
-							them into tailored digital solutions.
+							Je conçois des interfaces web modernes et
+							intuitives, spécifiquement adaptées aux besoins des
+							secteurs de l&apos;hôtellerie, de la restauration et
+							du vin. Fort de mes 15 années d&apos;expérience en
+							tant que chef et gérant de restaurants, je comprends
+							les besoins de ces secteurs et les traduis en
+							solutions numériques sur mesure.
 						</p>
 						<button
 							className="btn btn--secondary"
 							onClick={handleToggleAbout}
 						>
-							My Story
+							En savoir plus
 						</button>
 					</div>
 				</div>

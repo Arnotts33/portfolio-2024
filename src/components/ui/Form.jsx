@@ -42,14 +42,14 @@ function Form() {
 				<div className={styles.form__input_box_container}>
 					<input
 						type="text"
-						placeholder="Your Name"
+						placeholder="Votre Nom"
 						className={styles.contact__form_input}
 						name="name"
 						required
 					/>
 					<input
 						type="email"
-						placeholder="Your Email"
+						placeholder="Votre Email"
 						className={styles.contact__form_input}
 						name="email"
 						required
@@ -57,14 +57,14 @@ function Form() {
 				</div>
 				<div className={styles.textarea_container}>
 					<textarea
-						placeholder="Your Message"
+						placeholder="Votre Message"
 						className={styles.contact__form_input}
 						rows={8}
 						name="message"
 						required
 					></textarea>
 				</div>
-				<button className="btn button--primary">Send Message</button>
+				<button className="btn button--primary">Envoyer</button>
 			</form>
 		</>
 	);

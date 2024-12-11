@@ -15,29 +15,33 @@ function About({ toggleAbout }) {
 					/>
 				</div>
 				<div className={styles.about__text_container}>
-					<h2>from cooking to coding.</h2>
+					<h2>des fourneaux au digital.</h2>
 
 					<p>
-						Former chef and restaurant owner, I decided to embark on
-						a new flavorful professional chapter. Passionate about
-						tech, design and building things with my hands, coding
-						and frontend development just seemed the right path to
-						dive in. My goal is to convert designs into
-						pixel-perfect web pages and deliver beautiful web
-						experiences, while being thoughtful of their
-						environmental impact.
+						Après une carrière de 15 ans en tant que chef de cuisine
+						et gérant de mes restaurants, j&apos;ai choisi de me
+						réinventer en explorant ma passion pour le web et les
+						outils numériques. Une reconversion qui me permet
+						d&apos;allier rigueur, créativité et souci du détail
+						pour offrir à mes clients des solutions web sur mesure.
 					</p>
 					<p>
-						My professional chef background gave me strong soft
-						skills (communication, teamwork, creativity... ).
+						Fier de mes origines et de mon parcours, je profite de
+						ma double expertise pour accompagner les professionnels
+						de la restauration, du vin et des boissons dans
+						l&apos;élaboration de produits digitaux, tout en étant
+						ouvert à d&apos;autres secteurs. Mon objectif est de
+						traduire vos besoins en une vitrine digitale unique et
+						percutante.
 					</p>
 					<p>
-						When I am not coding, I still enjoy cooking as well as
-						photography, playing guitar, gaming and building things
-						(digital or not!).
+						Lorsque je ne suis pas immergé dans le développement
+						web, vous me trouverez probablement à cuisiner pour mes
+						proches, à jouer de la guitare ou bien encore à bricoler
+						toutes sortes de choses.
 					</p>
 					<button className={styles.about__btn} onClick={toggleAbout}>
-						Back
+						Retour
 					</button>
 				</div>
 			</div>

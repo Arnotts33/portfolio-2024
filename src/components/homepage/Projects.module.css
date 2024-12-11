@@ -6,12 +6,13 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding-block: 2rem;
 }
 
 .projects__container {
-	width: 80%;
+	width: 90%;
 	max-width: 87.5rem;
-	padding-block: 5rem;
+	padding-block: 2rem;
 }
 
 .right,

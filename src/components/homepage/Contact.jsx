@@ -56,20 +56,21 @@ function Contact() {
 	return (
 		<section className={styles.contact__section} id="contact" ref={section}>
 			<div className={styles.contact__container}>
-				<h1 ref={title}>Get In Touch</h1>
+				<h1 ref={title}>Contact</h1>
 				<div className={styles.contact__box}>
 					<div className={styles.contact__form_container}>
-						<h2>Interested in working together?</h2>
+						<h2>Un projet web en tête? Parlons-en!</h2>
 						<p>
-							I am open to work and looking for freelance
-							opportunities or a position in startups, agencies
-							and design studios.
+							Je suis disponible et ouvert à de nouvelles
+							opportunités. Si vous avez un projet web en tête ou
+							simplement des questions, n&apos;hésitez pas à me
+							contacter!
 						</p>
 						<Form />
 					</div>
 					<div className={styles.personal_info__container}>
 						<div className={styles.contact}>
-							<h3>Contact Details</h3>
+							<h3>Infos Contact</h3>
 							<p>
 								<a
 									href="mailto:alahaut.dev@gmail.com"

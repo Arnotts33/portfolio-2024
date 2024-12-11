@@ -29,18 +29,18 @@ function Navbar() {
 			<nav className={styles.header__nav}>
 				<ul className={styles.header__menu}>
 					<li>
-						<a href="#about">about</a>
+						<a href="#about">à propos</a>
 					</li>
 					<li>
-						<a href="#skills">skills</a>
+						<a href="#skills">services</a>
 					</li>
 					<li>
-						<a href="#projects">projects</a>
+						<a href="#projects">projets</a>
 					</li>
 				</ul>
 				<button className="btn button--primary">
 					<a className={styles.contact_btn} href="#contact">
-						contact me.
+						contact.
 					</a>
 				</button>
 

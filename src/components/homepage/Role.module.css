@@ -3,13 +3,14 @@
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-family: var(--ff-cabinet-sans);
+	padding-block: 2rem;
 }
 
 .role__container {
-	width: 80%;
+	width: 90%;
 	max-width: 87.5rem;
 	padding-block: 2rem;
 }
@@ -41,4 +42,11 @@
 .role__container > button {
 	margin-top: 3rem;
 	width: 180px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	.role__container {
+		padding-block: 1rem;
+	}
 }

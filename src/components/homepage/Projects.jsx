@@ -49,7 +49,7 @@ function Projects() {
 		>
 			<div className={styles.projects__container} ref={container}>
 				<div className={styles.title} ref={title}>
-					<h1>Selected Work</h1>
+					<h1>Projets</h1>
 				</div>
 				<div className={styles.projects}>
 					<div className={styles.left}>
@@ -58,8 +58,8 @@ function Projects() {
 							img={massaImg}
 							name="Massa"
 							year="2024"
-							tech="React • CSS • JavaScript"
-							description="A restaurant website for one of my former restaurants. For the design, I took inspiration from another website. I tried to implement what I have learned so far in React, such as hooks and state management."
+							tech="React • CSS"
+							description="Pour ce projet, je me suis donné comme mission la refonte totale du site web de mon ancien restaurant, Massa. Mon objectif était de concevoir un site moderne, intuitif et fluide aligné avec l'identité méditerranéenne orientale du restaurant."
 						/>
 					</div>
 					<div className={styles.right}>
@@ -68,8 +68,8 @@ function Projects() {
 							img={kedemImg}
 							name="Kedem"
 							year="2024"
-							tech="React • CSS • JavaScript"
-							description="Design and development of the website for Kedem, a Mediterranean-Oriental restaurant. The goal was to create a modern and elegant site that reflects the restaurant’s warm and authentic identity while offering a seamless user experience."
+							tech="React • CSS • GSAP • Figma"
+							description="Création du site vitrine pour Kedem, un restaurant méditerranéen oriental, afin de refléter son identité unique et renforcer sa présence en ligne. Le but était de concevoir un site web moderne, à la navigation fluide."
 						/>
 					</div>
 				</div>

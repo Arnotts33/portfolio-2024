@@ -68,13 +68,6 @@ function Hero() {
 						Arnaud Lahaut
 					</h1>
 
-					{/* <h1
-						ref={(el) => (titles.current[1] = el)}
-						className={`hidden ${styles.outlined} title`}
-					>
-						Creative
-					</h1> */}
-
 					<h1
 						ref={(el) => (titles.current[2] = el)}
 						className={`${styles.outlined} title`}

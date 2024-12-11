@@ -61,8 +61,28 @@ function Skills() {
 	return (
 		<section className={styles.skills__section} ref={section} id="skills">
 			<div className={styles.skills__container}>
-				<h1 ref={title}>Skills</h1>
-				<div className={styles.skills__box} ref={skills}>
+				<h1 ref={title}>Services</h1>
+				<div className={styles.skills__box}>
+					<div className={styles.skills__box_text}>
+						<h2>mes domaines d&apos;expertise.</h2>
+						<p>
+							Je conçois et développe des sites web sur mesure,
+							alliant design soigné et performance. Mon objectif
+							est de créer des expériences numériques impactantes
+							et adaptées, pour valoriser votre activité et capter
+							l&apos;attention de vos clients.
+						</p>
+					</div>
+					<div className={styles.skills__box_list}>
+						<ul>
+							<li>Développement Web</li>
+							<li>Web Design</li>
+							<li>UX/UI Design</li>
+							<li>SEO</li>
+						</ul>
+					</div>
+				</div>
+				{/* <div className={styles.skills__box} ref={skills}>
 					<div className={styles.skills__box_text}>
 						<h2>my digital spice rack.</h2>
 						<p>
@@ -136,7 +156,7 @@ function Skills() {
 							</li>
 						</ul>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);
