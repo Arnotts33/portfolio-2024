@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import Lenis from "lenis";
 
 import Hero from "./components/homepage/Hero";
@@ -10,8 +10,6 @@ import Projects from "./components/homepage/Projects";
 import Contact from "./components/homepage/Contact";
 
 function App() {
-	const skillsRef = useRef(null);
-
 	useEffect(() => {
 		const lenis = new Lenis();
 
@@ -25,11 +23,11 @@ function App() {
 
 	return (
 		<>
-			<Navbar skillsRef={skillsRef} />
+			<Navbar />
 			<main>
 				<Hero />
 				<Role />
-				<Skills ref={skillsRef} />
+				<Skills />
 				<Projects />
 				<Contact />
 			</main>
