@@ -28,11 +28,11 @@ function Projects() {
 					backgroundColor: "#0e0e0c",
 					ease: "power4.Out",
 				}).from(
-					title.current,
+					container.current,
 					{
 						duration: 2,
 						opacity: 0,
-						y: 50,
+						y: 200,
 						ease: "power4.inOut",
 					},
 					"-=1.6"

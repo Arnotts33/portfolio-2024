@@ -1,15 +1,15 @@
 import styles from "./Skills.module.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faReact,
-	faJs,
-	faCss3Alt,
-	faHtml5,
-	faFigma,
-	faGitAlt,
-} from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+// 	faReact,
+// 	faJs,
+// 	faCss3Alt,
+// 	faHtml5,
+// 	faFigma,
+// 	faGitAlt,
+// } from "@fortawesome/free-brands-svg-icons";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 
@@ -60,8 +60,8 @@ function Skills() {
 
 	return (
 		<section className={styles.skills__section} ref={section} id="skills">
-			<div className={styles.skills__container}>
-				<h1 ref={title}>Services</h1>
+			<div className={styles.skills__container} ref={title}>
+				<h1>Services</h1>
 				<div className={styles.skills__box}>
 					<div className={styles.skills__box_text}>
 						<h2>mes domaines d&apos;expertise.</h2>

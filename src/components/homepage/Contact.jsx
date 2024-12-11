@@ -36,7 +36,7 @@ function Contact() {
 					{
 						duration: 2,
 						opacity: 0,
-						y: 50,
+						y: 200,
 						ease: "power4.inOut",
 					},
 					"-=1.6"
@@ -55,8 +55,8 @@ function Contact() {
 
 	return (
 		<section className={styles.contact__section} id="contact" ref={section}>
-			<div className={styles.contact__container}>
-				<h1 ref={title}>Contact</h1>
+			<div className={styles.contact__container} ref={title}>
+				<h1>Contact</h1>
 				<div className={styles.contact__box}>
 					<div className={styles.contact__form_container}>
 						<h2>Un projet web en tête? Parlons-en!</h2>

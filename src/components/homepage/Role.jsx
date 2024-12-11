@@ -22,34 +22,28 @@ function Role() {
 			end: "bottom 0%",
 
 			onEnter: () => {
-				tl.to(section.current, {
-					duration: 1.3,
-					backgroundColor: "#0e0e0c",
-					ease: "power4.Out",
-				})
-					.from(
-						title.current,
-						{
-							duration: 2,
-							opacity: 0,
-							y: 150,
-							ease: "power4.inOut",
-						},
-						"-=1.6"
-					)
-					.from(
-						role.current,
-						{
-							duration: 2,
-							y: 150,
-							opacity: 0,
-							ease: "power4.inOut",
-						},
-						"-=1.6"
-					);
+				tl.from(
+					title.current,
+					{
+						duration: 2,
+						opacity: 0,
+						y: 150,
+						ease: "power4.inOut",
+					},
+					"-=1.6"
+				).from(
+					role.current,
+					{
+						duration: 2,
+						y: 150,
+						opacity: 0,
+						ease: "power4.inOut",
+					},
+					"-=1.6"
+				);
 			},
 		});
-	}, [section.current]);
+	}, []);
 
 	function handleToggleAbout() {
 		setIsToggleAbout((prevToggleAbout) => !prevToggleAbout);
