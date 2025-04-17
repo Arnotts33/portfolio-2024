@@ -8,7 +8,7 @@ import {
 	faLinkedin,
 	faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import beach from "/assets/images/beach-bg.jpg";
+import beach from "/assets/images/beach-bg.webp";
 
 function Hero() {
 	const heroContainer = useRef(null);
@@ -59,14 +59,8 @@ function Hero() {
 	return (
 		<section ref={heroContainer} className={styles.hero__container}>
 			<div className={styles.hero}>
-				<div
-					className={styles.hero__title}
-					data-scroll
-					data-scroll-speed="0.3"
-				>
-					<h1 ref={(el) => (titles.current[0] = el)}>
-						Arnaud Lahaut
-					</h1>
+				<div className={styles.hero__title} data-scroll data-scroll-speed="0.3">
+					<h1 ref={(el) => (titles.current[0] = el)}>Arnaud Lahaut</h1>
 
 					<h1
 						ref={(el) => (titles.current[2] = el)}
@@ -75,10 +69,7 @@ function Hero() {
 						Frontend
 					</h1>
 
-					<h1
-						ref={(el) => (titles.current[3] = el)}
-						className="title"
-					>
+					<h1 ref={(el) => (titles.current[3] = el)} className="title">
 						Developer
 					</h1>
 				</div>
@@ -88,11 +79,7 @@ function Hero() {
 			</div>
 
 			<div className={styles.hero__socials} ref={socials}>
-				<a
-					href="https://github.com/Arnotts33"
-					target="_blank"
-					rel="noreferrer"
-				>
+				<a href="https://github.com/Arnotts33" target="_blank" rel="noreferrer">
 					<FontAwesomeIcon icon={faGithub} size="xl" />
 				</a>
 				<a
@@ -110,10 +97,7 @@ function Hero() {
 					<FontAwesomeIcon icon={faSquareInstagram} size="xl" />
 				</a>
 			</div>
-			<div
-				className={styles.hero__scroll_indicator}
-				ref={scrollIndicator}
-			>
+			<div className={styles.hero__scroll_indicator} ref={scrollIndicator}>
 				<div className={styles.mouse}></div>
 			</div>
 		</section>

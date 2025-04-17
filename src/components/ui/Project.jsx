@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import styles from "./Project.module.css";
 
-function Project({ img, name, year, tech, description, link }) {
+function Project({ img, name, year, mission, tech, description, link }) {
 	return (
 		<div className={styles.project__container}>
 			<a href={link} target="_blank">
@@ -10,6 +10,7 @@ function Project({ img, name, year, tech, description, link }) {
 			<h2>{name}</h2>
 			<div className={styles.tags}>
 				<span>{year}</span>
+				<span>{mission}</span>
 				<span>{tech}</span>
 			</div>
 			<p>{description}</p>
@@ -22,6 +23,7 @@ Project.propTypes = {
 	img: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
 	year: PropTypes.string.isRequired,
+	mission: PropTypes.string.isRequired,
 	tech: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
 };
