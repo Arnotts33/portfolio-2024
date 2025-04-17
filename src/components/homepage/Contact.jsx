@@ -28,7 +28,7 @@ function Contact() {
 
 			onEnter: () => {
 				tl.to(section.current, {
-					duration: 1.3,
+					duration: 1.2,
 					backgroundColor: "#f8f8f6",
 					ease: "power4.Out",
 				}).from(
@@ -61,10 +61,9 @@ function Contact() {
 					<div className={styles.contact__form_container}>
 						<h2>Un projet web en tête? Parlons-en!</h2>
 						<p>
-							Je suis disponible et ouvert à de nouvelles
-							opportunités. Si vous avez un projet web en tête ou
-							simplement des questions, n&apos;hésitez pas à me
-							contacter!
+							Je suis disponible et ouvert à de nouvelles opportunités. Si vous
+							avez un projet web en tête ou simplement des questions,
+							n&apos;hésitez pas à me contacter!
 						</p>
 						<Form />
 					</div>

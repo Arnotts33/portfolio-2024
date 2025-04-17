@@ -37,7 +37,7 @@ body {
 	cursor: pointer;
 	font-size: 1.2rem;
 	color: var(--text-primary);
-	padding: 20px 30px;
+	padding: 1.25rem 2.5rem;
 }
 
 @media (width <768px) {

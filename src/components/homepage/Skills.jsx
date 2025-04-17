@@ -30,7 +30,7 @@ function Skills() {
 
 			onEnter: () => {
 				tl.to(section.current, {
-					duration: 1.3,
+					duration: 1.2,
 					backgroundColor: "#f8f8f6",
 					ease: "power4.Out",
 				})
@@ -66,11 +66,10 @@ function Skills() {
 					<div className={styles.skills__box_text}>
 						<h2>mes domaines d&apos;expertise.</h2>
 						<p>
-							Je conçois et développe des sites web sur mesure,
-							alliant design soigné et performance. Mon objectif
-							est de créer des expériences numériques impactantes
-							et adaptées, pour valoriser votre activité et capter
-							l&apos;attention de vos clients.
+							Je conçois et développe des sites web sur mesure, alliant design
+							soigné et performance. Mon objectif est de créer des expériences
+							numériques impactantes et adaptées, pour valoriser votre activité
+							et capter l&apos;attention de vos clients.
 						</p>
 					</div>
 					<div className={styles.skills__box_list}>
