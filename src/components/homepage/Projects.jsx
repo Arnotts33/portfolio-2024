@@ -5,6 +5,7 @@ import styles from "./Projects.module.css";
 import massaImg from "/assets/images/projet-massa.webp";
 import kedemImg from "/assets/images/projet-kedem.webp";
 import populaireImg from "/assets/images/projet-populaire.webp";
+import delidomImg from "/assets/images/projet-delidom.webp";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 
@@ -80,6 +81,17 @@ function Projects() {
 							mission="Design et développement du site web"
 							tech="Next.js • CSS • GSAP • Framer Motion"
 							description="Pour ce projet, j’ai accompagné Dorian dans la création du site web de Populaire, son restaurant ouvert à Bordeaux Saint-Michel. Mon objectif : concevoir un site rapide, élégant et immersif, à l’image du lieu et de son concept malin — sandwicherie le midi, bar à manger et cave à vins natures le soir."
+						/>
+					</div>
+					<div className={styles.right}>
+						<Project
+							link="https://delidom.fr/"
+							img={delidomImg}
+							name="DéliDom"
+							year="2025"
+							mission="Design et développement du site web"
+							tech="WordPress • Elementor • CSS"
+							description="Pour ce projet, j’ai accompagné Eléna dans la création du site web de DéliDom, son service de portage de repas à domicile en Vendée. Mon objectif était de concevoir un site simple, rassurant et facile à utiliser, pensé pour une clientèle qui n’est pas toujours à l’aise avec le numérique. Le site a été développé sous WordPress, avec une attention particulière portée à la rapidité, au référencement local et à la simplicité de gestion pour Eléna au quotidien."
 						/>
 					</div>
 				</div>
